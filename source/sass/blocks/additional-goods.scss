@@ -1,0 +1,40 @@
+.additional-goods__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.additional-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-goods__good-title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(34, 34, 34, 1);
+  text-transform: uppercase;
+}
+
+.additional-goods__item-wrapper {
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.additional-goods__circumscribing {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog.png");
+  background-repeat: no-repeat, no-repeat;
+  padding: 186px 61px 43px 61px;
+  width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+}

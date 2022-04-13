@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -202,26 +203,34 @@
       <ul class="additional-goods__list">
         <li class="additional-goods__item">
           <h3 class="additional-goods__good-title">Сахарозаменитель</h3>
-          <p class="additional-goods__description">1 упаковка (100 г)</p>
-          <span class="additional-goods__price">200 Р.</span>
+          <div class="additional-goods__item-wrapper">
+            <p class="additional-goods__description">1 упаковка (100 г)</p>
+            <span class="additional-goods__price">200 Р.</span>
+          </div>
           <button class="button additional-goods__button" type="button">Заказать</button>
         </li>
         <li class="additional-goods__item">
           <h3 class="additional-goods__good-title">Питьевая вода</h3>
-          <p class="additional-goods__description">5 литров</p>
-          <span class="additional-goods__price">50 Р.</span>
+          <div class="additional-goods__item-wrapper">
+            <p class="additional-goods__description">5 литров</p>
+            <span class="additional-goods__price">50 Р.</span>
+          </div>
           <button class="button additional-goods__button" type="button">Заказать</button>
         </li>
         <li class="additional-goods__item">
           <h3 class="additional-goods__good-title">Молоко</h3>
-          <p class="additional-goods__description">1 литр</p>
-          <span class="additional-goods__price">100 Р.</span>
+          <div class="additional-goods__item-wrapper">
+            <p class="additional-goods__description">1 литр</p>
+            <span class="additional-goods__price">100 Р.</span>
+          </div>
           <button class="button additional-goods__button" type="button">Заказать</button>
         </li>
         <li class="additional-goods__item">
           <h3 class="additional-goods__good-title">Витамины</h3>
-          <p class="additional-goods__description">1 упаковка (30 г)</p>
-          <span class="additional-goods__price">300 Р.</span>
+          <div class="additional-goods__item-wrapper">
+            <p class="additional-goods__description">1 упаковка (30 г)</p>
+            <span class="additional-goods__price">300 Р.</span>
+          </div>
           <button class="button additional-goods__button" type="button">Заказать</button>
         </li>
       </ul>
@@ -236,8 +245,8 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a class="footer-logo" href="index.html">
-        <img class="footer-logo__logo-description logo-text" src="img/main-page/logo-text.jpg" width="101" height="18"
+      <a class="main-footer__footer-logo" href="#">
+        <img class="main-footer__logo-description logo-text" src="img/main-page/logo-text.jpg" width="101" height="18"
           alt="cat energy">
       </a>
       <div class="main-footer__social social">
@@ -282,7 +291,6 @@
           </svg>
         </a>
       </div>
-
     </div>
   </footer>
 

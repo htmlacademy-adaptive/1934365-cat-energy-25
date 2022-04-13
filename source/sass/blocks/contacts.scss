@@ -1,0 +1,21 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__invitation {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 1);
+}

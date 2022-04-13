@@ -1,0 +1,16 @@
+.example {
+  width: 280px;
+}
+
+.example__container {
+  background-color: rgba(217, 217, 217, 1);
+  margin-bottom: 40px;
+}
+
+.example__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
