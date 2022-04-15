@@ -49,11 +49,29 @@
   justify-content: space-between;
 }
 
-/*.main-navigation__toggle {
-  width: 24px;
-}*/
+.main-navigation__toggle {
+  background: transparent;
+}
+
 .main-navigation__list {
   display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation__item {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: black;
 }
 
 .main-container__title {
@@ -96,7 +114,7 @@
 
 .programs__wrapper {
   margin-bottom: 20px;
-  background-color: #d9d9d9;
+  background-color: #F2F2F2;
 }
 
 .programs__list {
@@ -122,6 +140,16 @@
   color: black;
 }
 
+.programs__definition {
+  color: #444444;
+}
+
+.programs__button {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
 .advantages {
   margin-bottom: 50px;
 }
@@ -134,12 +162,16 @@
   color: black;
 }
 
+.advantages__item {
+  color: #444444;
+}
+
 .example {
   width: 280px;
 }
 
 .example__container {
-  background-color: #d9d9d9;
+  background-color: #EAEAEA;
   margin-bottom: 40px;
 }
 
@@ -151,8 +183,48 @@
   color: black;
 }
 
+.example__description {
+  color: #444444;
+}
+
+.example__number {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: black;
+}
+
+.example__definition {
+  font-family: "Arial", san-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.example__description-costs {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.example__progress-before,
+.example__progress-after {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
 .contacts {
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__invitation {
@@ -160,7 +232,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: #111111;
   text-transform: uppercase;
 }
 
@@ -173,10 +245,16 @@
   color: #444444;
 }
 
+.page__catalog .contacts,
+.page__form .contacts {
+  background-color: #F2F2F2;
+}
+
 .main-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F2F2F2;
 }
 
 .main-footer__container {
@@ -186,6 +264,7 @@
 .main-footer__footer-logo {
   display: block;
   text-align: center;
+  margin-top: 39px;
   margin-bottom: 32px;
 }
 
@@ -266,8 +345,16 @@
 }
 
 button.catalog__button-secondary {
+  font-size: 16px;
+  line-height: 20px;
   color: #444444;
   background-color: #f2f2f2;
+}
+
+button.catalog__button,
+button.additional-goods__button {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button {
@@ -368,5 +455,73 @@ fieldset {
 .master-contacts__item,
 .addition__item {
   margin-bottom: 13px;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__description {
+  font-family: "Arial", san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  text-transform: none;
+}
+
+.data__item input,
+textarea {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.weight-program__item label {
+  color: #222222;
+}
+
+.master-contacts__item input {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.master-contacts__title {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: black;
+  text-transform: none;
+}
+
+.comments__title {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: black;
+  text-transform: none;
+}
+
+.addition__title {
+  font-family: "Oswald", "Arial", san-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: black;
+  text-transform: none;
+}
+
+.addition__item {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
