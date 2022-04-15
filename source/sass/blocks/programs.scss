@@ -13,7 +13,7 @@
 
 .programs__wrapper {
   margin-bottom: 20px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #F2F2F2;
 }
 
 .programs__list {
@@ -37,4 +37,14 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
+}
+
+.programs__definition {
+  color: #444444;
+}
+
+.programs__button {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
 }

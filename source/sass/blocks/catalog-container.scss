@@ -47,6 +47,14 @@
 }
 
 button.catalog__button-secondary {
+  font-size: 16px;
+  line-height: 20px;
   color: rgba(68, 68, 68, 1);
   background-color: rgba(242, 242, 242, 1);
+}
+
+button.catalog__button,
+button.additional-goods__button {
+  font-size: 16px;
+  line-height: 20px;
 }
