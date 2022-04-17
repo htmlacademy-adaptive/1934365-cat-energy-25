@@ -1,0 +1,55 @@
+.example {
+  width: 280px;
+}
+
+.example__container {
+  background-color: #EAEAEA;
+  margin-bottom: 40px;
+}
+
+.example__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.example__description {
+  color: #444444;
+}
+
+.example__number {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.example__definition {
+  font-family: $basic-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.example__description-costs {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__progress-before,
+.example__progress-after {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}

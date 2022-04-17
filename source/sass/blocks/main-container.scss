@@ -1,0 +1,24 @@
+.main-container__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+
+.main-container__wrapper {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
+  background-color: $basic-green;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 165px;
+  margin-bottom: 20px;
+}
+
+.main-container__description {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
