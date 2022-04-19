@@ -1,5 +1,6 @@
 .main-navigation__toggle {
   background: transparent;
+  border: none;
 }
 
 .main-navigation__list {
@@ -7,6 +8,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-navigation__item {
@@ -16,9 +25,29 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-navigation__item:last-child {
+  margin-right: 0;
 }
 
 .main-navigation__link {
   text-decoration: none;
   color: $black;
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

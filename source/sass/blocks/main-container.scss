@@ -4,14 +4,21 @@
   font-size: 36px;
   line-height: 36px;
   color: $white;
-}
+  text-align: center;
 
-.main-container__wrapper {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
-  background-color: $basic-green;
-  background-repeat: no-repeat, no-repeat;
-  padding-bottom: 165px;
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    margin-left: 87px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    margin-left: 87px;
+    text-align: start;
+  }
 }
 
 .main-container__description {
@@ -21,4 +28,47 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    margin-left: 87px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    margin-left: 87px;
+    text-align: start;
+  }
 }
+
+.main-container__wrapper {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
+  background-color: $basic-green;
+  background-repeat: no-repeat, no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 165px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $white;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/main-page/cat-background-desktop.jpg");
+    background-color: $basic-green;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100%;
+    padding-top: 140px;
+    padding-bottom: 300px;
+    background-size: contain;
+  }
+
+}
+
+
