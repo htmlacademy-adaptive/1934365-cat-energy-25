@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -33,43 +34,47 @@
   </header>
 
   <main class="form-container">
-    <h1 class="form-container__title">Подбор программы</h1>
-    <p class="form-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="data">
-        <legend class="data__title visually-hidden">Входящие данные</legend>
-        <ul class="data__list">
-          <li class="data__item">
-            <label for="name">имя:*</label>
-            <input type="text" id="name" name="name" placeholder="барсик">
-          </li>
-          <li class="data__item">
-            <label for="weight">Вес (кг):*</label>
-            <input type="number" id="weight" name="weight" placeholder="7">
-          </li>
-          <li class="data__item">
-            <label for="age">Возраст (лет):</label>
-            <input type="number" id="age" name="age" placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="weight-program">
-        <legend class="weight-program__title visually-hidden">Программа контроля веса</legend>
-        <ul class="weight-program__list">
-          <li class="weight-program__item">
-            <label for="weight-loss">похудение</label>
-            <input type="radio" name="weight-program" id="weight-loss" checked>
-          </li>
-          <li class="weight-program__item">
-            <label for="weight-gain">Набор массы</label>
-            <input type="radio" name="weight-program" id="weight-gain">
-          </li>
-          <li class="weight-program__item">
-            <label for="unknown">Не знаю (Нужен ваш совет)</label>
-            <input type="radio" name="weight-program" id="unknown">
-          </li>
-        </ul>
-      </fieldset>
+    <div class="form-container__title-wrapper content-center">
+      <h1 class="form-container__title">Подбор программы</h1>
+      <p class="form-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    </div>
+    <form class="form content-center" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form__wrapper">
+        <fieldset class="data">
+          <legend class="data__title visually-hidden">Входящие данные</legend>
+          <ul class="data__list">
+            <li class="data__item">
+              <label for="name">имя:*</label>
+              <input class="data__userfield" type="text" id="name" name="name" placeholder="барсик">
+            </li>
+            <li class="data__item">
+              <label for="weight">Вес (кг):*</label>
+              <input class="data__userfield" type="number" id="weight" name="weight" placeholder="7">
+            </li>
+            <li class="data__item">
+              <label for="age">Возраст (лет):</label>
+              <input class="data__userfield" type="number" id="age" name="age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="weight-program">
+          <legend class="weight-program__title visually-hidden">Программа контроля веса</legend>
+          <ul class="weight-program__list">
+            <li class="weight-program__item">
+              <label for="weight-loss">похудение</label>
+              <input type="radio" name="weight-program" id="weight-loss" checked>
+            </li>
+            <li class="weight-program__item">
+              <label for="weight-gain">Набор массы</label>
+              <input type="radio" name="weight-program" id="weight-gain">
+            </li>
+            <li class="weight-program__item">
+              <label for="unknown">Не знаю (Нужен ваш совет)</label>
+              <input type="radio" name="weight-program" id="unknown">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="master-contacts">
         <legend class="master-contacts__title">Контактные данные (владельца кота)</legend>
         <ul class="master-contacts__list">

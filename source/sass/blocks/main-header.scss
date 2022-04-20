@@ -5,12 +5,18 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: transparent;
   }
 }
 
 .main-header__logo {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logo-description {
+  margin-left: 56px;
 }
 

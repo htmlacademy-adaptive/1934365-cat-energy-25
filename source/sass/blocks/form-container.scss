@@ -17,6 +17,11 @@ fieldset {
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-container__description {
@@ -26,6 +31,11 @@ fieldset {
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .data__list,
