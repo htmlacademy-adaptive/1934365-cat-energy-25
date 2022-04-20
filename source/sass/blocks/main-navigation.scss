@@ -59,3 +59,10 @@
     color: $white;
   }
 }
+
+.main-navigation__form-link,
+.main-navigation__catalog-link {
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
+}
