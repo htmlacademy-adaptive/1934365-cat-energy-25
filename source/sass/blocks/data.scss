@@ -1,4 +1,15 @@
+.data {
+  margin: 0;
+  padding: 0;
+}
+
+.data__item {
+  display: flex;
+  align-items: center;
+}
+
 .data__item input,
+.data__item label,
 textarea {
   font-family: $title-font;
   font-weight: 400;
@@ -6,4 +17,18 @@ textarea {
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.data__userfield {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  flex-grow: 1;
+  border: 1px solid #E7E7E7;
 }

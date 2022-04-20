@@ -1,22 +1,83 @@
 .example {
-  width: 280px;
+  background-color: #EAEAEA;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .example__container {
-  background-color: #EAEAEA;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #F2F2F2;
+  }
+}
+
+.example__inner-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 136px auto 77px 20px;
+    column-gap: 194px;
+  }
 }
 
 .example__title {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    width: 1220px;
+    margin: auto;
+  }
 }
 
 .example__description {
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.example__item {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
 .example__number {
@@ -42,6 +103,69 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+.example__image-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: transparent;
+  }
+}
+
+.example__progress {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    background-color: #EAEAEA;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.example__slim-image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: -122px;
+  }
+}
+
+.example__fat-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 122px;
+    overflow: hidden;
+  }
+}
+
+.example__slim-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 122px;
+    overflow: hidden;
+  }
 }
 
 .example__progress-before,
