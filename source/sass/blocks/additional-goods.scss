@@ -87,6 +87,7 @@
 .additional-goods__circumscribing {
   margin: 0;
   margin-bottom: 60px;
+  font-family: $basic-font;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -107,4 +108,9 @@
     margin-left: auto;
     width: 245px;
   }
+}
+
+.additional-goods__description,
+.additional-goods__price {
+  font-family: $basic-font;
 }
