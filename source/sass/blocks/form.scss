@@ -1,6 +1,10 @@
 .form__button {
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__description {
@@ -13,6 +17,20 @@
 }
 
 .form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

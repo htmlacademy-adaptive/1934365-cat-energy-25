@@ -59,6 +59,7 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
   background-color: $basic-green;
   background-repeat: no-repeat, no-repeat;
+  background-position: top;
 
   @media (min-width: $tablet-width) {
     background-image: none;

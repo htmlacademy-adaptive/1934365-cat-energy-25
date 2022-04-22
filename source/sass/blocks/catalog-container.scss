@@ -1,9 +1,20 @@
+.catalog-container {
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+}
+
 .catalog-container__title {
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  line-height: 60px;
+  }
 }
 
 .catalog__list {
