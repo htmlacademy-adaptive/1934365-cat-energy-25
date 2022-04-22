@@ -45,7 +45,8 @@
   margin: 0 auto;
 }
 
-.page__body {
+.page__body,
+.page__form {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -693,6 +694,7 @@ button.programs__button {
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   font-family: "Arial", san-serif;
   font-weight: 400;
@@ -800,6 +802,12 @@ button.additional-goods__button {
     padding: 10px 53px;
     width: auto;
   }
+}
+
+.catalog__description-list,
+.catalog__definition,
+.catalog__circumscribing-second {
+  font-family: "Arial", san-serif;
 }
 
 .button {
@@ -910,6 +918,7 @@ button.additional-goods__button {
 .additional-goods__circumscribing {
   margin: 0;
   margin-bottom: 60px;
+  font-family: "Arial", san-serif;
   font-size: 16px;
   line-height: 20px;
   color: white;
@@ -932,6 +941,11 @@ button.additional-goods__button {
     margin-left: auto;
     width: 245px;
   }
+}
+
+.additional-goods__description,
+.additional-goods__price {
+  font-family: "Arial", san-serif;
 }
 
 .form {
