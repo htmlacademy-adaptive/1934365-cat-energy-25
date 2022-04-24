@@ -16,19 +16,88 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    column-gap: 134px;
+    grid-row: 37px;
+    counter-reset: advantages-counter;
   }
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+  }
 }
+
 .advantages__item {
+  position: relative;
   color: #444444;
   margin-bottom: 20px;
+  padding-left: 100px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    padding: 0;
+    padding-top: 151px;
+    margin-bottom: 57px;
+    counter-increment: advantages-counter;
+
+    &::after {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      content: counter(advantages-counter);
+      font-family: $title-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #F2F2F2;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 55px;
   }
 }
 
+.advantages__item--health::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/main-page/health.jpg");
+}
 
+.advantages__item--easy::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/main-page/easy.jpg");
+}
+
+.advantages__item--food::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/main-page/food.jpg");
+}
+
+.advantages__item--fast::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/main-page/fast.jpg");
+}

@@ -4,14 +4,21 @@
 }
 
 .page__body,
+.page__catalog,
 .page__form {
   margin: 0;
+  padding-top: 10px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
-.page__catalog {
-  margin: 0;
-}
