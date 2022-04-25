@@ -28,7 +28,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 194px;
+    column-gap: 144px;
   }
 }
 
@@ -264,6 +264,18 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.example__progress-before {
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+  }
+}
+
+.example__progress-after {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
   }
 }
 

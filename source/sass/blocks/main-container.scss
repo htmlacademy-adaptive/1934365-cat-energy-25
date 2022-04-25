@@ -69,23 +69,17 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-     background-image: none;
-     background-color: $white;
-   }
+    background-image: none;
+    background-color: $white;
+  }
 
-   @media (min-width: $desktop-width) {
-     position: absolute;
-     top: 0;
-     z-index: -1;
-     background-image: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/main-page/cat-background-desktop.jpg");
-     background-size: contain;
-     background-position: right 100%;
-     height: 720px;
-   }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/main-page/cat-background-desktop.jpg");
+    background-size: contain;
+    background-position: right 100%;
+    height: 720px;
+  }
 }
-
-
-
-
-
-
