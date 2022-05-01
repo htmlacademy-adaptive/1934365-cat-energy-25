@@ -33,8 +33,9 @@
 }
 
 .example__title {
-  margin: 0;
-  margin-left: 20px;
+  margin: auto;
+  width: 280px;
+  margin-left: auto;
   margin-bottom: 40px;
   padding: 0;
   font-family: $title-font;
@@ -44,6 +45,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     margin-bottom: 63px;
     background-color: $white;
     font-size: 60px;
@@ -65,6 +67,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    width: 702px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -75,6 +78,18 @@
     width: 436px;
     margin-top: 70px;
     margin-bottom: 69px;
+  }
+}
+
+.example__stats-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -109,8 +124,8 @@
 }
 
 .example__number {
-  padding-top: 15px;
-  padding-bottom: 32px;
+  padding-top: 17px;
+  padding-bottom: 20px;
   text-align: center;
   font-family: $title-font;
   font-weight: 400;
@@ -119,6 +134,7 @@
   color: $black;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -159,32 +175,50 @@
   }
 }
 
-.example__description-costs {
+.example__costs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 75px;
+  }
+}
+
+.example__description-costs,
+.example__description-number {
   font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
-  text-align: center;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin: 0;
-    margin-left: 167px;
-    width: 125px;
-    text-align: end;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    width: 100%;
     margin: 0;
-    margin-top: 55px;
-    margin-bottom: 75px;
-    text-align: start;
+  }
+}
+
+.example__description-costs {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
   }
 }
 
@@ -209,6 +243,7 @@
 }
 
 .example__progress {
+  position: relative;
   display: flex;
   justify-content: space-around;
   padding-bottom: 40px;
@@ -221,11 +256,13 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     padding: 0;
     justify-content: space-between;
+    align-items: end;
     background-color: transparent;
     margin-top: 55px;
+    margin-bottom: 75px;
   }
 }
 
@@ -254,6 +291,7 @@
 
 .example__progress-before,
 .example__progress-after {
+  position: relative;
   font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
@@ -264,22 +302,33 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
   }
 }
 
 .example__progress-before {
   @media (min-width: $tablet-width) {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 }
 
 .example__progress-after {
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    margin-left: 40px;
   }
 }
 
-.example__progress-bar {
+.example__progress-bar-main {
   position: relative;
   width: 86px;
   height: 14px;
@@ -287,44 +336,69 @@
   border: 1px solid #CDCDCD;
   border-radius: 6px;
 
-  @media (min-width: $tablet-width) {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    z-index: 2;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 426px;
-      height: 6px;
-      top: 50%;
-      left: -196px;
-      transform: translateY(-3px);
-      z-index: 1;
-      background-color: #DCDCDC;
-      border-radius: 6px;
-    }
-  }
-
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     width: 36px;
     height: 6px;
-    top: 50%;
-    left: 7px;
-    transform: translateY(-3px);
+    top: 5px;
+    left: 50%;
+    transform: translateX(-36px);
     background-color: $basic-green;
     border-radius: 6px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      border: 1px solid #68B738;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
       width: 8px;
       height: 8px;
+      top: 14px;
       border-radius: 50%;
-      left: 13px;
-      transform: translateY(-4px);
-      z-index: 3;
+      transform: translateX(-4px);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 86px;
+    left: 50%;
+    transform: translateX(-17px);
+  }
+}
+
+.example__progress-bar-inner {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 426px;
+    height: 6px;
+    top: 50%;
+    left: -196px;
+    transform: translateY(16px);
+    z-index: 0;
+    background-color: #DCDCDC;
+    border-radius: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-8px);
   }
 }
