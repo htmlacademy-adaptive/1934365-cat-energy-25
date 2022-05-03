@@ -1,22 +1,27 @@
 .main-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+  }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
+    margin-bottom: 84px;
   }
 }
 
 .main-header__logo {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .main-header__logo-description {
   margin-left: 56px;
 }
-

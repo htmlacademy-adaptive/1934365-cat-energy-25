@@ -1,3 +1,7 @@
+.copyright {
+  margin: 20px 0;
+}
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
@@ -8,4 +12,28 @@
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
+}
+
+.copyright__link svg {
+  fill: #666666;
+
+  &:hover {
+    fill: #68B738;
+  }
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.copyright__description {
+  margin-right: 139px;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

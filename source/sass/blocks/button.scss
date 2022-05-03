@@ -7,6 +7,16 @@
   color: $white;
   text-transform: uppercase;
   background-color: $basic-green;
-  padding: 7px 44px;
+  padding: 11px 44px;
   border: none;
+
+  &:hover {
+    background-color: #5EAA2F;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
 }
