@@ -1178,7 +1178,7 @@ button.programs__button {
     left: 0;
     width: 100%;
     height: 2px;
-    background-image: url("../img/main-page/underline-full.svg");
+    background-image: url("../img/main-page/underline-dotted.svg");
   }
 }
 
