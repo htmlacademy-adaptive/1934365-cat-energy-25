@@ -1165,27 +1165,35 @@ button.programs__button {
     font-size: 20px;
     line-height: 30px;
   }
-  .example__progress-before::after,
-.example__progress-after::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-image: url("../img/main-page/underline.png");
-  }
 }
 
 @media (min-width: 768px) {
   .example__progress-before {
     margin-right: 40px;
   }
+  .example__progress-before::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: url("../img/main-page/underline-full.svg");
+  }
 }
 
 @media (min-width: 768px) {
   .example__progress-after {
     margin-left: 40px;
+  }
+  .example__progress-after::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: url("../img/main-page/underline-dotted.svg");
   }
 }
 
