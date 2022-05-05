@@ -15,7 +15,7 @@
       <img class="main-header__logo-description logo-text" src="img/main-page/logo-text.jpg" width="101" height="18"
         alt="cat energy.">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--closed">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">открыть меню.</span>
       </button>
@@ -61,15 +61,18 @@
           <legend class="weight-program__title visually-hidden">Программа контроля веса</legend>
           <ul class="weight-program__list">
             <li class="weight-program__item">
-              <input type="radio" name="weight-program" id="weight-loss" checked>
+              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="weight-loss" checked>
+              <span class="weight-program__control-mark"></span>
               <label for="weight-loss">похудение</label>
             </li>
             <li class="weight-program__item">
-              <input type="radio" name="weight-program" id="weight-gain">
+              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="weight-gain">
+              <span class="weight-program__control-mark"></span>
               <label for="weight-gain">Набор массы</label>
             </li>
             <li class="weight-program__item">
-              <input type="radio" name="weight-program" id="unknown">
+              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="unknown">
+              <span class="weight-program__control-mark"></span>
               <label for="unknown">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -78,40 +81,44 @@
       <fieldset class="master-contacts content-center">
         <legend class="master-contacts__title">Контактные данные (владельца кота)</legend>
         <ul class="master-contacts__list">
-          <li class="master-contacts__item">
+          <li class="master-contacts__item master-contacts__item-email">
             <label for="email">E-mail:*</label>
             <input class="master-contacts__userfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
           </li>
-          <li class="master-contacts__item">
+          <li class="master-contacts__item master-contacts__item-phone">
             <label for="phone">Телефон:*</label>
-            <input class="master-contacts__userfield" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            <input class="master-contacts__userfield" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
       <fieldset class="comments content-center">
         <legend class="comments__title">Комментарий</legend>
         <label for="content"></label>
-        <textarea rows="5" cols="10" id="content" name="content"
+        <textarea rows="8" cols="10" id="content" name="content"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="addition content-center">
         <legend class="addition__title">Дополнительно</legend>
         <ul class="addition__list">
           <li class="addition__item">
+            <input class="addition__control visually-hidden" type="checkbox" name="shugar" id="shugar" checked>
+            <span class="addition__control-mark"></span>
             <label for="shugar">сахарозаменитель</label>
-            <input type="checkbox" name="shugar" id="shugar" checked>
           </li>
           <li class="addition__item">
+            <input class="addition__control visually-hidden" type="checkbox" name="water" id="water">
+            <span class="addition__control-mark"></span>
             <label for="water">питьевая вода</label>
-            <input type="checkbox" name="water" id="water">
           </li>
           <li class="addition__item">
+            <input class="addition__control visually-hidden" type="checkbox" name="milk" id="milk">
+            <span class="addition__control-mark"></span>
             <label for="milk">молоко</label>
-            <input type="checkbox" name="milk" id="milk">
           </li>
           <li class="addition__item">
+            <input class="addition__control visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+            <span class="addition__control-mark"></span>
             <label for="vitamin">витамины</label>
-            <input type="checkbox" name="vitamin" id="vitamin">
           </li>
         </ul>
       </fieldset>
@@ -170,7 +177,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>HTML Academy</span>
+          <span class="copyright__description">HTML Academy</span>
           <svg aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -180,6 +187,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 
 </body>
 

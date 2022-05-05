@@ -15,7 +15,7 @@
       <img class="main-header__logo-description logo-text" src="img/main-page/logo-text.jpg" width="101" height="18"
         alt="cat energy.">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--closed">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">открыть меню.</span>
       </button>
@@ -40,8 +40,8 @@
       <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-1.jpg" width="68" height="86"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-1.png" width="68" height="86"
                 alt="Cat Energy PRO 500 г">
               <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
               <dl class="catalog__description-list">
@@ -62,8 +62,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-2.jpg" width="84" height="100"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-2.png" width="84" height="100"
                 alt="Cat Energy PRO 1000 г">
               <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
               <dl class="catalog__description-list">
@@ -84,8 +84,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-3.jpg" width="68" height="78"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-3.png" width="68" height="78"
                 alt="Cat Energy PRO 500 г">
               <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
               <dl class="catalog__description-list">
@@ -106,8 +106,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-4.jpg" width="84" height="100"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-4.png" width="84" height="100"
                 alt="Cat Energy PRO 1000 г">
               <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
               <dl class="catalog__description-list">
@@ -128,8 +128,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-5.jpg" width="68" height="78"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-5.png" width="68" height="78"
                 alt="Cat Energy SLIM 500 г">
               <h3 class="catalog__item-title">Cat Energy SLIM 500 г</h3>
               <dl class="catalog__description-list">
@@ -150,8 +150,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-6.jpg" width="84" height="100"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-6.png" width="84" height="100"
                 alt="Cat Energy SLIM 1000 г">
               <h3 class="catalog__item-title">Cat Energy SLIM 1000 г</h3>
               <dl class="catalog__description-list">
@@ -172,8 +172,8 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <div class="item-wrapper">
-              <img class="catalog__image" src="img/catalog/picture-7.jpg" width="68" height="78"
+            <div class="catalog__item-wrapper">
+              <img class="catalog__image" src="img/catalog/picture-7.png" width="68" height="78"
                 alt="Cat Energy SLIM 500 г">
               <h3 class="catalog__item-title">Cat Energy SLIM 500 г</h3>
               <dl class="catalog__description-list">
@@ -194,8 +194,10 @@
             <button class="button catalog__button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <p class="catalog__circumscribing-first">Показать еще 100500 товаров</p>
-            <p class="catalog__circumscribing-second">На самом деле вкусов гораздо больше!</p>
+            <div class="catalog__item-wrapper">
+              <p class="catalog__circumscribing-first">Показать еще 100500 товаров</p>
+              <p class="catalog__circumscribing-second">На самом деле вкусов гораздо больше!</p>
+            </div>
             <button class="button catalog__button-secondary" type="button">Показать все</button>
           </li>
         </ul>
@@ -238,7 +240,9 @@
             <button class="button additional-goods__button" type="button">Заказать</button>
           </li>
         </ul>
-        <p class="additional-goods__circumscribing">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additional-goods__circumscribing-wrapper">
+          <p class="additional-goods__circumscribing">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <div class="contacts">
@@ -291,7 +295,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>HTML Academy</span>
+          <span class="copyright__description">HTML Academy</span>
           <svg aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -301,7 +305,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="script.js"></script>
 
 </body>
 

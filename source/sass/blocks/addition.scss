@@ -1,5 +1,6 @@
 .addition {
   margin: 0;
+  margin-bottom: 21px;
   padding: 0;
 }
 
@@ -18,14 +19,87 @@
 }
 
 .addition__title {
+  position: relative;
+  margin-bottom: 34px;
+  padding-right: 23px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 100%;
+    width: 400vh;
+    height: 2px;
+    background-color: #68B738;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 211px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $white;
+    padding: 0 38px;
+    margin-bottom: 76px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -50%;
+      width: 500%;
+      height: 2px;
+      background-color: #68B738;
+      z-index: -1;
+    }
+  }
 }
 
 .addition__item {
   color: $black;
+  padding-bottom: 12px;
 }
+
+.addition__item label {
+  position: relative;
+  padding-left: 44px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #CDCDCD;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.addition__control:checked + .addition__control-mark {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    transform: translate(5px, 7px);
+    background-image: url("../img/form/tick.svg");
+  }
+}
+
+// .addition__control:hover + .addition__control-name::before {
+//   border-color: #BABABA;
+// }

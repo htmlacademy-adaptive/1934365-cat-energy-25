@@ -1,6 +1,11 @@
 .master-contacts {
   margin: 0;
   padding: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .master-contacts__list {
@@ -18,6 +23,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .master-contacts__item {
@@ -32,13 +42,102 @@
   padding-left: 16px;
   flex-grow: 1;
   border: 1px solid #E7E7E7;
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:hover {
+    outline: 1px solid #CDCDCD;
+  }
+
+  &:invalid {
+    outline: 2px solid #FF8282;
+  }
 }
 
+.master-contacts__item-email {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-7px);
+    right: 16px;
+    background-image: url("../img/form/icon-email.svg");
+  }
+}
+
+.master-contacts__item-phone {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-10px);
+    right: 16px;
+    background-image: url("../img/form/phone.svg");
+  }
+}
+
+// .master-contacts__userfield:focus .master-contacts__item-email::after {
+//   background-image: url("../img/form/icon-email-green.svg");
+// }
+
 .master-contacts__title {
+  position: relative;
+  width: 204px;
+  padding-top: 26px;
+  padding-bottom: 35px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 37%;
+    left: 100%;
+    width: 400vh;
+    height: 2px;
+    background-color: #68B738;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 514px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $white;
+    padding: 0 42px;
+    margin-bottom: 76px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -50%;
+      width: 500%;
+      height: 2px;
+      background-color: #68B738;
+      z-index: -1;
+    }
+  }
+}
+
+.master-contacts__item label {
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
