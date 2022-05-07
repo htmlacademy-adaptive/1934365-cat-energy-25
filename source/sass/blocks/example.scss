@@ -124,8 +124,8 @@
 }
 
 .example__number {
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   text-align: center;
   font-family: $title-font;
   font-weight: 400;
@@ -160,10 +160,10 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    width: 114px;
+    width: 127px;
     padding: 0;
     bottom: -4px;
-    transform: translateX(-55px);
+    transform: translateX(-64px);
     background-color: $white;
     font-size: 14px;
     line-height: 14px;
@@ -184,6 +184,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: end;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -302,7 +303,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+  }
+}
+
+.example__progress-before {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
 
     &::after {
       position: absolute;
@@ -310,21 +316,25 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 1px;
-      background-color: rgba(0, 0, 0, 0.4);
+      height: 2px;
+      background-image: url("../img/main-page/underline-dotted.svg");
     }
-  }
-}
-
-.example__progress-before {
-  @media (min-width: $tablet-width) {
-    margin-right: 40px;
   }
 }
 
 .example__progress-after {
   @media (min-width: $tablet-width) {
     margin-left: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-image: url("../img/main-page/underline-dotted.svg");
+    }
   }
 }
 
