@@ -71,3 +71,14 @@
 .contacts__map {
   width: 100%;
 }
+
+.contacts__adress-street,
+.contacts__adress-town {
+  margin: 0;
+}
+
+.contacts__adress-street {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}

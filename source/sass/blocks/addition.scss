@@ -51,8 +51,8 @@
       position: absolute;
       content: "";
       top: 50%;
-      left: -50%;
-      width: 500%;
+      left: -100%;
+      width: 500vw;
       height: 2px;
       background-color: #68B738;
       z-index: -1;
@@ -67,21 +67,35 @@
 
 .addition__item label {
   position: relative;
-  padding-left: 44px;
+  padding-left: 60px;
+}
 
+.addition__control-mark {
+  position: relative;
   &::before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #CDCDCD;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 5px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #CDCDCD;
+    }
   }
 }
 
@@ -98,8 +112,27 @@
     transform: translate(5px, 7px);
     background-image: url("../img/form/tick.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 19px;
+      top: 0;
+      left: 0;
+      transform: translate(8px, 10px);
+      background-image: url("../img/form/tick-big.svg");
+    }
+  }
 }
 
-// .addition__control:hover + .addition__control-name::before {
-//   border-color: #BABABA;
-// }
+.addition__control:hover + .addition__control-mark {
+  &::before {
+    border: 1px solid #BABABA;
+  }
+}
+
+.addition__control:disabled + .addition__control-mark {
+  opacity: 0.3;
+}
