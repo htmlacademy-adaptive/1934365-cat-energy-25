@@ -2,17 +2,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 17px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 37px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 78px;
+    margin-bottom: 71px;
   }
 }
 
@@ -20,8 +20,48 @@
   display: flex;
   align-items: center;
   margin-bottom: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__logo-description {
   margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

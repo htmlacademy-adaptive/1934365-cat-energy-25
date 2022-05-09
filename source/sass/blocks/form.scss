@@ -1,11 +1,13 @@
 .form__button {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -22,8 +24,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    justify-self: start;
     font-size: 16px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
   }
 }
 
@@ -32,6 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 69px;
   }
 }
 
@@ -48,5 +56,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 82px;
   }
 }

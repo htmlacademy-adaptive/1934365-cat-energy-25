@@ -1,7 +1,11 @@
 .addition {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .addition__list {
@@ -15,12 +19,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 33px;
   }
 }
 
 .addition__title {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
+  padding: 0;
   padding-right: 23px;
   font-family: $title-font;
   font-weight: 400;
@@ -33,6 +39,7 @@
     position: absolute;
     content: "";
     top: 50%;
+    transform: translateY(1px);
     left: 100%;
     width: 400vh;
     height: 2px;
@@ -46,11 +53,13 @@
     background-color: $white;
     padding: 0 38px;
     margin-bottom: 76px;
+    margin-left: -38px;
 
     &::after {
       position: absolute;
       content: "";
       top: 50%;
+      transform: translateY(4px);
       left: -100%;
       width: 500vw;
       height: 2px;
@@ -58,16 +67,35 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .addition__item {
   color: $black;
   padding-bottom: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .addition__item label {
   position: relative;
-  padding-left: 60px;
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 59px;
+  }
 }
 
 .addition__control-mark {
@@ -75,10 +103,11 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: -2px;
     left: 0;
     width: 30px;
     height: 30px;
+    box-sizing: border-box;
     border: 1px solid #CDCDCD;
   }
 

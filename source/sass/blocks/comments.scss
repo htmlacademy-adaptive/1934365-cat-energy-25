@@ -1,9 +1,13 @@
 .comments {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 65px;
   }
 }
@@ -11,6 +15,7 @@
 .comments__title {
   position: relative;
   margin-bottom: 38px;
+  padding: 0;
   padding-right: 22px;
   font-family: $title-font;
   font-weight: 400;
@@ -23,6 +28,7 @@
     position: absolute;
     content: "";
     top: 50%;
+    transform: translateY(1px);
     left: 100%;
     width: 400vh;
     height: 2px;
@@ -35,12 +41,14 @@
     line-height: 36px;
     background-color: $white;
     padding: 0 38px;
+    margin-left: -38px;
     margin-bottom: 76px;
 
     &::after {
       position: absolute;
       content: "";
       top: 50%;
+      transform: translateY(4px);
       left: -100%;
       width: 500vw;
       height: 2px;
@@ -52,14 +60,17 @@
 
 textarea {
   margin: 0;
-  padding-left: 15px;
-  padding-top: 9px;
+  padding-left: 14px;
+  padding-top: 8px;
   width: 100%;
   min-height: 151px;
+  resize: none;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
+    padding-left: 19px;
+    padding-top: 9px;
   }
 }

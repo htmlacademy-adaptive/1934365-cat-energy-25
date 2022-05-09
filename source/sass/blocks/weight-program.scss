@@ -2,8 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 29px;
 
   &::after {
     position: absolute;
@@ -17,37 +16,48 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #E7E7E7;
-    padding-top: 25px;
-    padding-left: 27px;
-    margin-bottom: 71px;
+    padding: 30px 0 5px 27px;
+    margin-bottom: 75px;
 
     &::after {
       display: none;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 5px;
+    margin: 0;
   }
 }
 
 .weight-program__item label {
   position: relative;
-  padding-left: 50px;
+  padding-left: 45px;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
 }
 
 .weight-program__control-mark {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
     left: 0;
     top: 0;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    box-sizing: border-box;
     border: 1px solid #CDCDCD;
   }
 
@@ -55,7 +65,7 @@
     &::before {
       position: absolute;
       content: "";
-      transform: translateY(-2px);
+      transform: translateY(-5px);
       width: 40px;
       height: 40px;
     }
@@ -70,7 +80,7 @@
     content: "";
     left: 9px;
     top: 50%;
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -83,7 +93,7 @@
       content: "";
       left: 12px;
       top: 50%;
-      transform: translateY(-5px);
+      transform: translateY(-9px);
       width: 18px;
       height: 18px;
       border-radius: 50%;
@@ -112,9 +122,15 @@
   text-transform: uppercase;
   color: #222222;
   padding-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 23px;
   }
 }

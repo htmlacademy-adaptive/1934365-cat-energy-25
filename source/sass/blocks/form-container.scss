@@ -13,7 +13,7 @@ fieldset {
 
 .form-container__title {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   padding: 0;
   font-family: $title-font;
   font-weight: 400;
@@ -22,8 +22,13 @@ fieldset {
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
   }
 }
 
@@ -39,6 +44,7 @@ fieldset {
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -53,9 +59,3 @@ fieldset {
   list-style-type: none;
 }
 
-.data__item,
-.weight-program__item,
-.master-contacts__item,
-.addition__item {
-  margin-bottom: 13px;
-}
