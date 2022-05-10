@@ -21,3 +21,16 @@
     width: 1220px;
   }
 }
+
+.inner-content-center {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}

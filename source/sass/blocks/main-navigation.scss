@@ -9,7 +9,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateY(8px);
+  transform: translateY(9px);
   margin: 0;
   padding: 0;
   width: 24px;
@@ -82,14 +82,14 @@
   width: 24px;
   height: 1.5px;
   background-color: $black;
-  box-shadow: 0 6px 0 0 $black, 0 13px 0 0 $black;
+  box-shadow: 0 7px 0 0 $black, 0 15px 0 0 $black;
 
   &:hover {
-    box-shadow: 0 6px 0 0 fade($black, 60%), 0 13px 0 0 fade($black, 60%);
+    box-shadow: 0 7px 0 0 fade($black, 60%), 0 15px 0 0 fade($black, 60%);
   }
 
   &:active {
-    box-shadow: 0 6px 0 0 fade($black, 30%), 0 13px 0 0 fade($black, 30%);
+    box-shadow: 0 7px 0 0 fade($black, 30%), 0 15px 0 0 fade($black, 30%);
   }
 }
 
@@ -108,6 +108,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    margin-top: -2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,17 +133,18 @@
     position: absolute;
     content: "";
     top: 0;
-    left: -20px;
+    left: -80%;
     width: 320%;
     height: 1px;
     background-color: #E6E6E6;
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 34px;
+    margin-right: 36px;
     font-size: 18px;
     line-height: 24px;
     padding: 0;
+    padding-top: 8px;
 
     &::before {
       display: none;
@@ -150,19 +152,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 34px;
+    margin-right: 35px;
     color: $white;
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.main-navigation__item:last-child {
-  margin-right: 0;
-  padding-bottom: 7px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 
@@ -170,7 +163,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
-      bottom: -10px;
+      bottom: -6px;
       left: 0;
       content: "";
       height: 2px;
@@ -182,6 +175,15 @@
   @media (min-width: $desktop-width) {
     &::after {
       background-color: $white;
+    }
+  }
+}
+
+.page__form .main-navigation__item--current,
+.page__catalog .main-navigation__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: #68B738;
     }
   }
 }
@@ -213,6 +215,15 @@
 
 .main-navigation__form-link,
 .main-navigation__catalog-link {
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     color: $black;
   }

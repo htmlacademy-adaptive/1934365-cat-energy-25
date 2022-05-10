@@ -12,6 +12,9 @@ fieldset {
 }
 
 .form-container__title {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
@@ -19,12 +22,20 @@ fieldset {
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
   }
 }
 
 .form-container__description {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
   font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
@@ -33,6 +44,7 @@ fieldset {
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -47,9 +59,3 @@ fieldset {
   list-style-type: none;
 }
 
-.data__item,
-.weight-program__item,
-.master-contacts__item,
-.addition__item {
-  margin-bottom: 13px;
-}

@@ -1,19 +1,37 @@
 .form__button {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .form__description {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
   font-family: $basic-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $black;
   text-transform: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
 }
 
 .form__wrapper {
@@ -21,6 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 69px;
   }
 }
 
@@ -29,11 +48,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    margin-bottom: 72px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 82px;
   }
 }
