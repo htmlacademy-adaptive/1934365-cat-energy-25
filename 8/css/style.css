@@ -319,16 +319,6 @@
   }
 }
 
-.main-navigation__item:last-child {
-  margin-right: 0;
-  padding-bottom: 7px;
-}
-@media (min-width: 768px) {
-  .main-navigation__item:last-child {
-    padding-bottom: 0;
-  }
-}
-
 @media (min-width: 768px) {
   .main-navigation__item--current::after {
     position: absolute;
