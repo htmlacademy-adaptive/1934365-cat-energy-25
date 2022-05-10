@@ -26,6 +26,7 @@
 
 .inner-content-center {
   margin: 0 auto;
+  width: 280px;
 }
 @media (min-width: 768px) {
   .inner-content-center {
@@ -62,6 +63,7 @@
 .page__body,
 .page__catalog,
 .page__form {
+  overflow-x: hidden;
   margin: 0;
   padding-top: 10px;
   font-family: "Arial", sans-serif;
@@ -84,16 +86,11 @@
   }
 }
 
-.page__catalog,
-.page__form {
-  overflow-x: hidden;
-}
-
 .main-header {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .main-header {
@@ -109,10 +106,14 @@
   }
 }
 
+.page__form .main-header {
+  margin-bottom: 28px;
+}
+
 .main-header__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .main-header__logo:hover {
   opacity: 0.8;
