@@ -159,15 +159,6 @@
   }
 }
 
-.main-navigation__item:last-child {
-  margin-right: 0;
-  padding-bottom: 7px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
-  }
-}
-
 .main-navigation__item--current {
   @media (min-width: $tablet-width) {
     &::after {
