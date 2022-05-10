@@ -6,6 +6,7 @@
 .page__body,
 .page__catalog,
 .page__form {
+  overflow-x: hidden;
   margin: 0;
   padding-top: 10px;
   font-family: "Arial", sans-serif;
@@ -22,7 +23,3 @@
   }
 }
 
-.page__catalog,
-.page__form {
-  overflow-x: hidden;
-}

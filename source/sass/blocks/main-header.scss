@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,10 +16,14 @@
   }
 }
 
+.page__form .main-header {
+  margin-bottom: 28px;
+}
+
 .main-header__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   &:hover {
     opacity: 0.8;
