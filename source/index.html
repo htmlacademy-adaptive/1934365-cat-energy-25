@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -40,7 +44,11 @@
       <div class="programs__intro-wrapper content-center">
         <h1 class="main-container__title">Функциональное<br> питание для котов</h1>
         <p class="main-container__description">Занялся собой? Займись котом!</p>
-        <img class="programs__intro-image" src="img/main-page/can.jpg" width="280" height="270" alt="банка с кормом.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-page/can-desktop.png 1x, img/main-page/can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/main-page/can-tablet.png 1x, img/main-page/can-tablet@2x.png 2x">
+          <img class="programs__intro-image" src="img/main-page/can.jpg" srcset="img/main-page/can@2x.png 2x" width="280" height="270" alt="банка с кормом.">
+        </picture>
         <button class="button programs__button" type="button">подобрать программу</button>
       </div>
     </div>
@@ -111,13 +119,14 @@
             </div>
             </div>
           <div class="example__image-wrapper">
-            <div class="example__fat-wrapper">
-              <img class="example__fat-image" src="img/main-page/fat-cat.jpg" width="243" height="232" alt="кот с лишним весом">
-            </div>
-            <div class="example__slim-wrapper">
-              <img class="example__slim-image" src="img/main-page/slim-cat.png" width="243" height="232"
-              alt="кот с нормальным весом">
-            </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-page/fat-cat-tablet.png 1x, img/main-page/fat-cat-tablet@2x.png 2x">
+                <img class="example__fat-image" src="img/main-page/fat-cat.png" srcset="img/main-page/fat-cat@2x.png 2x" width="280" height="232" alt="кот с лишним весом">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-page/slim-cat-tablet.png 1x, img/main-page/slim-cat-tablet@2x.png 2x">
+                <img class="example__slim-image" src="img/main-page/slim-cat.png" srcset="img/main-page/slim-cat@2x.png 2x" width="280" height="232" alt="кот с нормальным весом">
+              </picture>
           </div>
           <div class="example__progress">
             <span class="example__progress-before">Было</span>

@@ -144,7 +144,7 @@
     font-size: 18px;
     line-height: 24px;
     padding: 0;
-    padding-top: 8px;
+    margin-top: -4px;
 
     &::before {
       display: none;
@@ -156,6 +156,12 @@
     color: $white;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-navigation__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 

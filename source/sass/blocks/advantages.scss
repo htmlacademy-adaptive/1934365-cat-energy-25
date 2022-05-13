@@ -1,8 +1,16 @@
 .advantages {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 42px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
@@ -37,14 +45,14 @@
 .advantages__item {
   position: relative;
   color: #444444;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
     padding: 0;
-    padding-top: 151px;
-    margin-bottom: 57px;
+    padding-top: 141px;
+    margin-bottom: 104px;
     font-size: 16px;
     line-height: 24px;
     counter-increment: advantages-counter;
@@ -71,39 +79,67 @@
 .advantages__item--health::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
   background-image: url("../img/main-page/health.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 29px;
+    background-image: url("../img/main-page/health-tablet.jpg");
+  }
 }
 
 .advantages__item--easy::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
   background-image: url("../img/main-page/easy.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 29px;
+    background-image: url("../img/main-page/easy-tablet.jpg");
+  }
 }
 
 .advantages__item--food::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
   background-image: url("../img/main-page/food.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 29px;
+    background-image: url("../img/main-page/food-tablet.jpg");
+  }
 }
 
 .advantages__item--fast::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
   background-image: url("../img/main-page/fast.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 29px;
+    background-image: url("../img/main-page/fast-tablet.jpg");
+  }
 }

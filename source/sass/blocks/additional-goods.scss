@@ -1,8 +1,9 @@
 .additional-goods__title {
   position: relative;
   display: inline-block;
+  margin: 0;
   padding-right: 22px;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
@@ -13,7 +14,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 20%;
+    top: 15px;
     left: 100%;
     width: 100vh;
     height: 2px;
@@ -25,6 +26,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 36px;
+    margin-bottom: 79px;
 
     &::after {
       position: absolute;
@@ -48,9 +50,10 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +63,7 @@
 
 .additional-goods__good-title {
   margin: 0;
+  margin-bottom: 14px;
   padding: 0;
   font-family: $title-font;
   font-weight: 400;
@@ -71,6 +75,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    margin-left: 38px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -78,6 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 14px;
   font-size: 14px;
   line-height: 14px;
   color: rgba(68, 68, 68, 1);
@@ -88,6 +100,8 @@
     align-items: baseline;
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+    margin-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,8 +111,8 @@
 
 .additional-goods__item {
   position: relative;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   &::after {
     position: absolute;
@@ -115,17 +129,28 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     padding-top: 26px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     align-items: baseline;
+    border: 1px solid #CDCDCD;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 324px 324px 224px;
+    grid-template-columns: 325px 325px 244px;
     column-gap: 0;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    align-items: center;
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 3px;
+    align-items: baseline;
+    border: none;
+
+    &::after {
+      display: block;
+    }
   }
 }
 
@@ -138,6 +163,18 @@
     width: 100%;
     height: 1px;
     background-color: #CDCDCD;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: block;
+    }
   }
 }
 
@@ -157,25 +194,30 @@
 .additional-goods__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 86px;
+    margin-bottom: 82px;
   }
 }
 
 .additional-goods__circumscribing-wrapper {
   position: relative;
   margin: 0;
-  margin-bottom: 60px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog.png");
+  margin-bottom: 36px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog.jpg");
   background-repeat: no-repeat, no-repeat;
-  padding: 186px 61px 43px 61px;
+  padding: 189px 61px 40px 57px;
   width: 280px;
   box-sizing: border-box;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    margin-bottom: 76px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 71px 124px 69px 0;
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: 100% 60%;
     width: 100%;
   }
 
@@ -198,9 +240,9 @@
   &::before {
     position: absolute;
     content: "";
-    top: 63px;
+    top: 59px;
     left: 50%;
-    transform: translateX(-35px);
+    transform: translateX(-40px);
     width: 70px;
     height: 70px;
     background-image: url("../img/catalog/gift.svg");
@@ -214,8 +256,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 63px;
-      left: 15%;
+      top: 58px;
+      left: 17%;
     }
   }
 
@@ -226,22 +268,25 @@
     &::before {
       position: absolute;
       content: "";
-      top: 63px;
+      top: 58px;
       left: 50%;
-      transform: translateX(-45px);
+      transform: translateX(-38px);
     }
   }
 }
 
 .additional-goods__description {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     margin-right: 49px;
   }
 }
 
 .additional-goods__price {
+  margin: 0;
+
   @media (min-width: $desktop-width) {
   display: block;
-  margin-right: 38px;
   }
 }

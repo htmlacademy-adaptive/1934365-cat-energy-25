@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +31,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

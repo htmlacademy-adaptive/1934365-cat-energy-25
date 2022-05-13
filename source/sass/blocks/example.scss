@@ -1,5 +1,6 @@
 .example {
   padding-top: 25px;
+  margin-bottom: 27px;
   background-color: #EAEAEA;
 
   @media (min-width: $tablet-width) {
@@ -63,6 +64,10 @@
 }
 
 .example__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-bottom: 20px;
   color: #444444;
 
   @media (min-width: $tablet-width) {
@@ -125,7 +130,7 @@
 
 .example__number {
   padding-top: 15px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   text-align: center;
   font-family: $title-font;
   font-weight: 400;
@@ -144,9 +149,9 @@
 
 .example__definition {
   position: absolute;
-  bottom: -12px;
+  bottom: -14px;
   left: 50%;
-  transform: translateX(-43px);
+  transform: translateX(-45px);
   width: 75px;
   padding: 0 6px;
   text-align: center;
@@ -179,7 +184,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -230,7 +235,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 68px;
     background-color: #EAEAEA;
   }
 
@@ -246,8 +251,8 @@
 .example__progress {
   position: relative;
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 40px;
+  justify-content: space-between;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -272,23 +277,31 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-left: -122px;
+    width: 296px;
+    height: 511px;
   }
 }
 
-.example__fat-wrapper {
+// .example__fat-wrapper {
+//   @media (min-width: $tablet-width) {
+//     width: 122px;
+//     overflow: hidden;
+//   }
+// }
+
+.example__fat-image {
   @media (min-width: $tablet-width) {
-    width: 122px;
-    overflow: hidden;
+    width: 296px;
+    height: 511px;
   }
 }
 
-.example__slim-wrapper {
-  @media (min-width: $tablet-width) {
-    width: 122px;
-    overflow: hidden;
-  }
-}
+// .example__slim-wrapper {
+//   @media (min-width: $tablet-width) {
+//     width: 122px;
+//     overflow: hidden;
+//   }
+// }
 
 .example__progress-before,
 .example__progress-after {
@@ -307,6 +320,7 @@
 }
 
 .example__progress-before {
+  padding-left: 40px;
   @media (min-width: $tablet-width) {
     margin-right: 40px;
 
@@ -323,6 +337,8 @@
 }
 
 .example__progress-after {
+  padding-right: 40px;
+
   @media (min-width: $tablet-width) {
     margin-left: 40px;
 

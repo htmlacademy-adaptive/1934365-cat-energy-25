@@ -7,7 +7,6 @@
   font-size: 36px;
   line-height: 36px;
   color: $black;
-  padding-bottom: 41px;
 
   &::before {
     position: absolute;
@@ -21,7 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 163px;
+    margin-bottom: 124px;
     font-size: 60px;
     line-height: 60px;
 
