@@ -12,12 +12,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
   }
 }
 
 .page__form .main-header {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .main-header__logo {

@@ -108,11 +108,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-top: -2px;
+    margin-top: -4px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-top: 2px;
     background-color: transparent;
   }
 }
@@ -169,7 +170,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
-      bottom: -6px;
+      bottom: -9px;
       left: 0;
       content: "";
       height: 2px;

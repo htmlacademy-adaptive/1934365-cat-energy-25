@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .programs__container {
@@ -37,6 +41,7 @@
     grid-row: 1 / 4;
     width: 552px;
     height: 499px;
+    margin-left: -272px;
   }
 }
 
@@ -76,8 +81,10 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 520px auto;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 160px auto auto;
     margin-bottom: 267px;
+    padding-top: 37px;
   }
 }
 
@@ -102,6 +109,8 @@ button.programs__button {
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    padding: 18px 26px;
+    margin-left: 80px;
   }
 }
 
@@ -117,6 +126,7 @@ button.programs__button {
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 570px;
   }
 }
@@ -126,6 +136,10 @@ button.programs__button {
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -160,7 +174,7 @@ button.programs__button {
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: -30px;
+      top: -37px;
       width: 100px;
       left: 52px;
       right: 62px;
@@ -299,7 +313,7 @@ button.programs__button {
 
   @media (min-width: $desktop-width) {
     width: 467px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 

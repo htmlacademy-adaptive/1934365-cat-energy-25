@@ -59,8 +59,8 @@
 
     &::after {
       position: absolute;
-      top: -20px;
-      right: 0;
+      top: -11px;
+      right: 4px;
       content: counter(advantages-counter);
       font-family: $title-font;
       font-weight: 400;
@@ -73,6 +73,36 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 55px;
+  }
+}
+
+.advantages__item--health {
+  @media (min-width: $tablet-width) {
+    &::after {
+      right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 74px;
+  }
+}
+
+.advantages__item--easy,
+.advantages__item--food {
+  @media (min-width: $desktop-width) {
+    margin-right: 75px;
+  }
+}
+
+.advantages__item--fast {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    width: 245px;
+
+    &::after {
+      right: -4px;
+    }
   }
 }
 

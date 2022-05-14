@@ -210,11 +210,11 @@
   text-align: center;
 
   @media (min-resolution: 2dppx) {
-    margin-bottom: 76px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
     padding: 71px 124px 69px 0;
     background-size: cover;
     background-position: 100% 60%;
