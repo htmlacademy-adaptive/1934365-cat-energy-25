@@ -21,7 +21,6 @@
   @media (min-width: $desktop-width) {
     color: $black;
     margin-left: 80px;
-    margin-bottom: 40px;
     text-align: start;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -52,7 +51,6 @@
   @media (min-width: $desktop-width) {
     color: $black;
     margin-left: 80px;
-    margin-bottom: 52px;
     text-align: start;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -101,5 +99,11 @@
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background-desktop@2x.jpg");
     }
+  }
+}
+
+.main-container__picture-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 5;
   }
 }

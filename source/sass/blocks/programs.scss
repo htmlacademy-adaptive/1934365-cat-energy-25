@@ -82,8 +82,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 500px auto;
-    grid-template-rows: 160px auto auto;
-    margin-bottom: 267px;
+    grid-template-rows: min-content min-content min-content auto auto;
+    margin-bottom: 132px;
     padding-top: 37px;
   }
 }
@@ -235,11 +235,11 @@ button.programs__button {
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    margin: 77px 0 24px 53px;
+    margin: 77px 200px 24px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 77px 0 73px 0;
+    margin: 77px 200px 73px 0;
     padding-left: 214px;
   }
 }
