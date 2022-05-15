@@ -47,16 +47,6 @@
 }
 
 .main-header__logo-image {
-  margin-top: -4px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-header__logo-description {
-  margin-left: 56px;
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -68,16 +58,18 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
-.main-header__logo-desktop {
-  display: none;
+.logo {
+  width: 192px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    width: 202px;
+    height: 59px;
   }
 }
