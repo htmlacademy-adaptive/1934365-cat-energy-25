@@ -142,44 +142,16 @@ img {
   }
 }
 
-.main-header__logo-image {
-  margin-top: -4px;
-}
 @media (min-width: 768px) {
   .main-header__logo-image {
-    display: none;
-  }
-}
-
-.main-header__logo-description {
-  margin-left: 56px;
-}
-@media (min-width: 768px) {
-  .main-header__logo-description {
-    display: none;
-  }
-}
-
-.main-header__logo-tablet {
-  display: none;
-}
-@media (min-width: 768px) {
-  .main-header__logo-tablet {
-    display: block;
+    width: 174px;
+    height: 52px;
   }
 }
 @media (min-width: 1440px) {
-  .main-header__logo-tablet {
-    display: none;
-  }
-}
-
-.main-header__logo-desktop {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .main-header__logo-desktop {
-    display: block;
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
 
