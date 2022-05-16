@@ -75,6 +75,7 @@
     width: 172px;
     height: 196px;
     top: -75px;
+    transform: translateX(-83px);
   }
 }
 
@@ -83,13 +84,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -50px;
+    top: -48px;
     transform: translateX(-80px);
     left: 50%;
   }
 
   @media (min-width: $desktop-width) {
     top: -77px;
+    transform: translateX(-83px);
   }
 }
 
