@@ -61,6 +61,7 @@
     height: 302px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
     background-repeat: no-repeat;
+    background-position-x: 50%;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background@2x.jpg");
@@ -239,7 +240,7 @@ button.programs__button {
   }
 
   @media (min-width: $desktop-width) {
-    margin: 77px 200px 73px 0;
+    margin: 77px 0 73px 0;
     padding-left: 214px;
   }
 }

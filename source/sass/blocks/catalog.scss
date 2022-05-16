@@ -65,10 +65,10 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    transform: translateX(-84px);
-    top: -73px;
-    width: 168px;
-    height: 200px;
+    transform: translateX(-80px);
+    top: -49px;
+    width: 163px;
+    height: 174px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,8 +83,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -73px;
-    transform: translateX(-84px);
+    top: -50px;
+    transform: translateX(-80px);
     left: 50%;
   }
 
@@ -107,7 +107,7 @@
     height: 204px;
     left: 50%;
     transform: translateX(-84px);
-    top: -73px;
+    top: -75px;
   }
 
   @media (min-width: $desktop-width) {
