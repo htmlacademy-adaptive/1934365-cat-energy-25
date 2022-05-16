@@ -6,7 +6,7 @@
   color: $white;
   text-align: center;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -20,8 +20,7 @@
 
   @media (min-width: $desktop-width) {
     color: $black;
-    margin-left: 87px;
-    margin-bottom: 40px;
+    margin-left: 80px;
     text-align: start;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -45,14 +44,13 @@
     line-height: 20px;
     color: $black;
     margin-left: 87px;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     color: $black;
-    margin-left: 87px;
-    margin-bottom: 52px;
+    margin-left: 80px;
     text-align: start;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -62,7 +60,7 @@
 .main-container__wrapper::before {
   content: "";
   width: 100%;
-  height: 302px;
+  height: 303px;
   z-index: -2;
   background-color: #63a63a;
   background-repeat: no-repeat, no-repeat;
@@ -89,13 +87,23 @@
 
 .main-container__wrapper::after {
   @media (min-width: $desktop-width) {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 720px;
-  height: 694px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background-desktop.jpg");
-  z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background-desktop.jpg");
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.main-container__picture-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 5;
   }
 }

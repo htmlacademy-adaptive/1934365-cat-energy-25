@@ -3,6 +3,19 @@
   padding-bottom: 26px;
 }
 
+.page__body .main-footer,
+.page__catalog .main-footer {
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+.page__form .main-footer {
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+  }
+}
+
 .main-footer__container {
   display: flex;
   flex-direction: column;
@@ -14,7 +27,7 @@
     padding-top: 27px;
   }
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    padding-top: 0;
   }
 }
 

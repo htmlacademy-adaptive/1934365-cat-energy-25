@@ -8,22 +8,30 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
   }
 }
 
 .page__form .main-header {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .main-header__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   &:hover {
     opacity: 0.8;
@@ -32,40 +40,21 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-header__logo-image {
-  margin-top: -4px;
-
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 174px;
+    height: 52px;
+  }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+      height: 59px;
   }
 }
 
-.main-header__logo-description {
-  margin-left: 56px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-header__logo-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.main-header__logo-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
