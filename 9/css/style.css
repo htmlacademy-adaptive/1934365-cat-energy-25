@@ -70,7 +70,7 @@ img {
 .page__form {
   overflow-x: hidden;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 11px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -128,7 +128,7 @@ img {
 .main-header__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .main-header__logo:hover {
   opacity: 0.8;
@@ -165,7 +165,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateY(9px);
+  transform: translateY(13px);
   margin: 0;
   padding: 0;
   width: 24px;
@@ -566,6 +566,7 @@ img {
   height: 302px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/cat-background.jpg");
   background-repeat: no-repeat;
+  background-position-x: 50%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .programs__intro-wrapper::after {
@@ -746,7 +747,7 @@ button.programs__button {
 }
 @media (min-width: 1440px) {
   .programs__description {
-    margin: 77px 200px 73px 0;
+    margin: 77px 0 73px 0;
     padding-left: 214px;
   }
 }
@@ -1895,10 +1896,10 @@ button.programs__button {
   .catalog__item:nth-child(2n+1) .catalog__image {
     position: absolute;
     left: 50%;
-    transform: translateX(-84px);
-    top: -73px;
-    width: 168px;
-    height: 200px;
+    transform: translateX(-80px);
+    top: -49px;
+    width: 163px;
+    height: 174px;
   }
 }
 @media (min-width: 1440px) {
@@ -1915,8 +1916,8 @@ button.programs__button {
 @media (min-width: 768px) {
   .catalog__item:first-child .catalog__image {
     position: absolute;
-    top: -73px;
-    transform: translateX(-84px);
+    top: -50px;
+    transform: translateX(-80px);
     left: 50%;
   }
 }
@@ -1941,7 +1942,7 @@ button.programs__button {
     height: 204px;
     left: 50%;
     transform: translateX(-84px);
-    top: -73px;
+    top: -75px;
   }
 }
 @media (min-width: 1440px) {
