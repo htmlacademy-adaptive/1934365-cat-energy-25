@@ -35,15 +35,16 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    padding-left: 24px;
+    padding-left: 36px;
+    min-width: 144px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 28px;
+    padding-left: 40px;
   }
 }
 
-.social__item:not(:nth-child(3n)) {
+.social__item:not(:last-child) {
   margin-right: 24px;
 }
 

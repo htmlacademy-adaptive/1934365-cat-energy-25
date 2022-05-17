@@ -48,7 +48,7 @@
 .programs__intro-wrapper {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 27px;
+  padding-top: 26px;
   text-align: center;
 
   &::after {
@@ -155,32 +155,58 @@ button.programs__button {
   &::after {
     position: absolute;
     top: 21px;
+    left: 29px;
+    content: "";
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/main-page/cat-slim.svg");
+    background-size: cover;
+  }
+
+  &::before {
+    position: absolute;
+    top: 24px;
     left: 21px;
     content: "";
     width: 50px;
-    height: 53px;
-    background-image: url("../img/main-page/cat-slim.png");
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68B738;
   }
 
   @media (min-width: $tablet-width) {
     &::after {
       top: 5px;
-      width: 200px;
+      width: 140px;
+      height: 194px;
+      left: auto;
+      right: 92px;
+    }
+
+    &::before {
+      top: 16px;
       left: auto;
       right: 62px;
-      height: 211px;
-      background-image: url("../img/main-page/cat-slim-tablet.png");
+      width: 200px;
+      height: 200px;
     }
+
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: -37px;
+      top: -38px;
+      width: 70px;
+      height: 97px;
+      left: 67px;
+    }
+
+    &::before {
+      top: -32px;
       width: 100px;
+      height: 100px;
       left: 52px;
       right: 62px;
-      height: 106px;
-      background-image: url("../img/main-page/cat-slim-desktop.png");
     }
   }
 }
@@ -190,33 +216,59 @@ button.programs__button {
 
   &::after {
     position: absolute;
-    top: 24px;
+    top: 35px;
     left: 13px;
     content: "";
     width: 67px;
+    height: 28px;
+    background-image: url("../img/main-page/cat-strong.svg");
+    background-size: cover;
+  }
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    content: "";
+    width: 50px;
     height: 50px;
-    background-image: url("../img/main-page/cat-strong.png");
+    border-radius: 50%;
+    background-color: #68B738;
   }
 
   @media (min-width: $tablet-width) {
     &::after {
-      top: 14px;
+      top: 59px;
       width: 268px;
+      height: 112px;
       left: auto;
       right: 28px;
+    }
+
+    &::before {
+      top: 16px;
+      left: auto;
+      right: 60px;
+      width: 200px;
       height: 200px;
-      background-image: url("../img/main-page/cat-strong-tablet.png");
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: -30px;
+      top: -11px;
       width: 134px;
+      height: 56px;
       left: 33px;
       right: auto;
+    }
+
+    &::before {
+      top: -32px;
+      width: 100px;
       height: 100px;
-      background-image: url("../img/main-page/cat-strong-desktop.png");
+      left: 52px;
+      right: 62px;
     }
   }
 }
