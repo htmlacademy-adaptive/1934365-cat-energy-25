@@ -99,77 +99,157 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
     width: 245px;
+  }
+}
+
+.advantages__item--health {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 18px;
+    width: 25px;
+    height: 28px;
+    background-image: url("../img/main-page/health.svg");
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 57px;
+      left: 26px;
+    }
 
     &::after {
-      right: -4px;
+      top: 30px;
+      left: 0;
+      width: 80px;
+      height: 80px;
     }
   }
 }
 
-.advantages__item--health::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/main-page/health.svg");
+.advantages__item--easy {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 15px;
+    width: 29px;
+    height: 31px;
+    background-image: url("../img/main-page/easy.svg");
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 29px;
-    background-image: url("../img/main-page/health-tablet.svg");
+    &::before {
+      top: 54px;
+      left: 24px;
+    }
+
+    &::after {
+      top: 30px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
-.advantages__item--easy::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/main-page/easy.svg");
+.advantages__item--food {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 18px;
+    width: 25px;
+    height: 30px;
+    background-image: url("../img/main-page/food.svg");
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 29px;
-    background-image: url("../img/main-page/easy-tablet.svg");
+    &::before {
+      top: 55px;
+      left: 28px;
+    }
+
+    &::after {
+      top: 30px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
-.advantages__item--food::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/main-page/food.svg");
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 29px;
-    background-image: url("../img/main-page/food-tablet.svg");
+.advantages__item--fast {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 14px;
+    width: 32px;
+    height: 33px;
+    background-image: url("../img/main-page/fast.svg");
+    background-size: contain;
+    z-index: 1;
   }
-}
 
-.advantages__item--fast::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/main-page/fast.svg");
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 29px;
-    background-image: url("../img/main-page/fast-tablet.svg");
+    &::before {
+      top: 54px;
+      left: 24px;
+    }
+
+    &::after {
+      top: 30px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
