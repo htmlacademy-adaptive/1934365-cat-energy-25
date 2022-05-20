@@ -32,7 +32,7 @@
     left: 100%;
     width: 400vh;
     height: 2px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
       left: -100%;
       width: 500vw;
       height: 2px;
-      background-color: #68B738;
+      background-color: #68b738;
       z-index: -1;
     }
   }
@@ -66,7 +66,7 @@ textarea {
   min-height: 151px;
   resize: none;
   box-sizing: border-box;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;

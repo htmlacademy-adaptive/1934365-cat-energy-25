@@ -18,7 +18,7 @@
     left: 100%;
     width: 100vh;
     height: 2px;
-    background-color: #68B738;
+    background-color: #68b738;
     z-index: -1;
   }
 
@@ -35,10 +35,11 @@
       left: -80%;
       width: 500%;
       height: 2px;
-      background-color: #68B738;
+      background-color: #68b738;
       z-index: -1;
     }
   }
+
   @media (min-width: $desktop-width) {
     margin-left: -36px;
   }
@@ -287,6 +288,6 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
-  display: block;
+    display: block;
   }
 }

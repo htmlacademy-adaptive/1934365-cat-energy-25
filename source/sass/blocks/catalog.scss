@@ -131,7 +131,7 @@
     left: -100%;
     width: 200vh;
     height: 1px;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
   }
 
   @media (min-width: $tablet-width) {
@@ -142,7 +142,7 @@
     min-height: 388px;
     padding: 0;
     padding-bottom: 39px;
-    background-color:#F2F2F2;
+    background-color: #f2f2f2;
 
     &::after {
       display: none;
@@ -168,11 +168,10 @@
     left: -100%;
     width: 200vh;
     height: 1px;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
   }
 
   @media (min-width: $tablet-width) {
-
     &::before {
       display: none;
     }
@@ -182,7 +181,7 @@
 .catalog__item:last-child {
   @media (min-width: $tablet-width) {
     background-color: $white;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
   }
 }
 
@@ -245,6 +244,7 @@
       background-color: #cdcdcd;
     }
   }
+
   @media (min-width: $desktop-width) {
     width: 167px;
   }
@@ -269,7 +269,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     top: 39px;
     left: 50%;
   }
@@ -296,7 +296,7 @@
       content: "";
       width: 60px;
       height: 2px;
-      background-color: #D3D3D3;
+      background-color: #d3d3d3;
       top: -80px;
       left: 50%;
     }
@@ -324,6 +324,7 @@
     font-size: 16px;
     line-height: 18px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 2px;
   }
@@ -336,12 +337,12 @@ button.catalog__button-secondary {
   background-color: rgba(242, 242, 242, 1);
 
   &:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
   }
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
   }
 
   @media (min-width: $tablet-width) {

@@ -1,7 +1,7 @@
 .example {
   padding-top: 25px;
   margin-bottom: 27px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 64px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }
 
@@ -165,7 +165,7 @@
   text-align: center;
   z-index: 2;
   margin: 0;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   font-family: $basic-font;
   font-weight: 400;
   font-size: 12px;
@@ -181,11 +181,12 @@
     font-size: 14px;
     line-height: 14px;
   }
+
   @media (min-width: $desktop-width) {
     width: 142px;
     bottom: -6px;
     transform: translateX(-71px);
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }
 
@@ -254,7 +255,7 @@
     justify-content: center;
     margin: 0;
     margin-top: 65px;
-    background-image: linear-gradient(to bottom, white 0%, white 32%, #EAEAEA 32%, #EAEAEA 100%);
+    background-image: linear-gradient(to bottom, $white 0%, $white 32%, #eaeaea 32%, #eaeaea 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -282,7 +283,7 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 60px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
   }
 
   @media (min-width: $desktop-width) {
@@ -402,7 +403,7 @@
   position: relative;
   width: 86px;
   height: 14px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
 
@@ -434,7 +435,7 @@
 
     &:active {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-      border: 1px solid #68B738;
+      border: 1px solid #68b738;
     }
 
     &::after {
@@ -466,7 +467,7 @@
     left: -196px;
     transform: translateY(12px);
     z-index: 0;
-    background-color: #DCDCDC;
+    background-color: #dcdcdc;
     border-radius: 6px;
   }
 
