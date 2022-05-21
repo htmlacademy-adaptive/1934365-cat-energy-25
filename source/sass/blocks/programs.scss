@@ -117,7 +117,7 @@ button.programs__button {
 
 .programs__wrapper {
   margin-bottom: 22px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -171,7 +171,7 @@ button.programs__button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -190,7 +190,6 @@ button.programs__button {
       width: 200px;
       height: 200px;
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -233,7 +232,7 @@ button.programs__button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -352,7 +351,7 @@ button.programs__button {
   padding-bottom: 21px;
   color: #444444;
   width: 227px;
-  border-bottom: solid 1px #D9D9D9;
+  border-bottom: solid 1px #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding: 0;

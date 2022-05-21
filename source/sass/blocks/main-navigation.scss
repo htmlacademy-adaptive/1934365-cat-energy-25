@@ -39,6 +39,7 @@
 
 .main-navigation--opened .main-navigation__toggle {
   right: 20px;
+
   &::after,
   &::before {
     position: absolute;
@@ -140,7 +141,7 @@
     left: -80%;
     width: 320%;
     height: 1px;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
@@ -179,7 +180,7 @@
       content: "";
       height: 2px;
       width: 100%;
-      background-color: #68B738;
+      background-color: #68b738;
     }
   }
 
@@ -194,7 +195,7 @@
 .page__catalog .main-navigation__item--current {
   @media (min-width: $desktop-width) {
     &::after {
-      background-color: #68B738;
+      background-color: #68b738;
     }
   }
 }
@@ -226,7 +227,6 @@
 
 .main-navigation__form-link,
 .main-navigation__catalog-link {
-
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }

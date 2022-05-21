@@ -20,7 +20,7 @@
   }
 }
 
-.master-contacts__item input{
+.master-contacts__item input {
   font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
@@ -36,7 +36,7 @@
 
 .master-contacts__item {
   position: relative;
-  display:flex;
+  display: flex;
   align-items: center;
   margin-bottom: 13px;
 
@@ -51,7 +51,7 @@
   padding-bottom: 14px;
   padding-left: 16px;
   flex-grow: 1;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   &:focus {
     outline: 2px solid #444444;
@@ -62,7 +62,7 @@
   }
 
   &:invalid {
-    outline: 2px solid #FF8282;
+    outline: 2px solid #ff8282;
   }
 
   @media (min-width: $tablet-width) {
@@ -109,19 +109,19 @@
 }
 
 .master-contacts__userfield:hover + .master-contacts__phone-image {
-  fill: #68B738;
+  fill: #68b738;
 }
 
 .master-contacts__userfield:invalid + .master-contacts__phone-image {
-  fill: #FF8282;
+  fill: #ff8282;
 }
 
 .master-contacts__userfield:hover + .master-contacts__email-image {
-  stroke: #68B738;
+  stroke: #68b738;
 }
 
 .master-contacts__userfield:invalid + .master-contacts__email-image {
-  stroke: #FF8282;
+  stroke: #ff8282;
 }
 
 .master-contacts__title {
@@ -144,7 +144,7 @@
     left: 100%;
     width: 400vh;
     height: 2px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -164,7 +164,7 @@
       left: -50%;
       width: 500%;
       height: 2px;
-      background-color: #68B738;
+      background-color: #68b738;
       z-index: -1;
     }
   }

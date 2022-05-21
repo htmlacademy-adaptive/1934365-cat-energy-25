@@ -66,39 +66,13 @@
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #F2F2F2;
+      color: #f2f2f2;
       z-index: -1;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 55px;
-  }
-}
-
-.advantages__item--health {
-  @media (min-width: $tablet-width) {
-    &::after {
-      right: 25px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 74px;
-  }
-}
-
-.advantages__item--easy,
-.advantages__item--food {
-  @media (min-width: $desktop-width) {
-    margin-right: 75px;
-  }
-}
-
-.advantages__item--fast {
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-    width: 245px;
   }
 }
 
@@ -122,13 +96,14 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       top: 57px;
       left: 26px;
+      right: 25px;
     }
 
     &::after {
@@ -137,6 +112,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 74px;
   }
 }
 
@@ -160,7 +139,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -175,6 +154,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 75px;
   }
 }
 
@@ -198,7 +181,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -213,6 +196,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 75px;
   }
 }
 
@@ -236,7 +223,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -251,5 +238,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    width: 245px;
   }
 }
