@@ -1,19 +1,6 @@
 .main-footer {
   background-color: #f2f2f2;
-  padding-bottom: 26px;
-}
-
-.page__body .main-footer,
-.page__catalog .main-footer {
-  @media (min-width: $desktop-width) {
-    padding-top: 26px;
-  }
-}
-
-.page__form .main-footer {
-  @media (min-width: $desktop-width) {
-    padding-top: 23px;
-  }
+  padding-bottom: 10px;
 }
 
 .main-footer__container {
@@ -27,9 +14,9 @@
     padding-top: 27px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-  }
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 0;
+  // }
 }
 
 .main-footer__footer-logo {

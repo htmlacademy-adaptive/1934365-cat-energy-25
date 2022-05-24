@@ -1,10 +1,32 @@
 .master-contacts {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 42px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
+
+    &::after {
+      top: 22px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -12,11 +34,34 @@
   }
 }
 
+.master-contacts__title-wrapper {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .master-contacts__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
+    max-width: 1220px;
   }
 }
 
@@ -66,15 +111,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding: 10px 40px 10px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 10px;
-    padding-left: 18px;
-    padding-bottom: 10px;
+    padding: 10px 40px 10px 18px;
   }
 }
 
@@ -127,25 +168,17 @@
 .master-contacts__title {
   position: relative;
   width: 204px;
+  margin: 0;
   padding: 0;
   padding-top: 26px;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $black;
   text-transform: none;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 37%;
-    left: 100%;
-    width: 400vh;
-    height: 2px;
-    background-color: #68b738;
-  }
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 514px;
@@ -155,22 +188,10 @@
     padding: 0 42px;
     margin-bottom: 75px;
     margin-left: -42px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      transform: translateY(5px);
-      left: -50%;
-      width: 500%;
-      height: 2px;
-      background-color: #68b738;
-      z-index: -1;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
 }
 

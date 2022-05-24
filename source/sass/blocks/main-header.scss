@@ -8,15 +8,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 60px;
   }
 }
 
-.page__form .main-header {
+.main-header-form {
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 66px;
   }
 }
 
@@ -43,6 +43,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-top: -8px;
   }
 }
 

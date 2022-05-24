@@ -1,3 +1,9 @@
+.catalog-container {
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+  }
+}
+
 .catalog-container__title {
   position: relative;
   padding-top: 27px;

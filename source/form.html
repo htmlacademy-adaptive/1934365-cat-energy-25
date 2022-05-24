@@ -1,200 +1,233 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
-</head>
-
-<body class="page__form">
-  <header class="main-header content-center">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/main-page/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/main-page/logo-tablet.svg">
-        <img class="main-header__logo-image" src="img/main-page/logo-mobile-group.svg" width="191" height="38" alt="логотип cat energy.">
-      </picture>
-    </a>
-    <nav class="main-navigation main-navigation--closed">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">открыть меню.</span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__form-link" href="index.html">главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__form-link" href="catalog.html">каталог продукции</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link main-navigation__form-link" href="#">подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="form-container">
-    <div class="form-container__title-wrapper inner-content-center">
-      <h1 class="form-container__title">Подбор программы</h1>
-      <p class="form-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-    </div>
-    <form class="form inner-content-center" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__wrapper">
-        <fieldset class="data">
-          <legend class="data__title visually-hidden">Входящие данные</legend>
-          <ul class="data__list">
-            <li class="data__item">
-              <label for="name">имя:*</label>
-              <input class="data__userfield" type="text" id="name" name="name" placeholder="барсик">
-            </li>
-            <li class="data__item">
-              <label for="weight">Вес (кг):*</label>
-              <input class="data__userfield" type="number" id="weight" name="weight" placeholder="7">
-            </li>
-            <li class="data__item">
-              <label for="age">Возраст (лет):</label>
-              <input class="data__userfield" type="number" id="age" name="age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="weight-program">
-          <legend class="weight-program__title visually-hidden">Программа контроля веса</legend>
-          <ul class="weight-program__list">
-            <li class="weight-program__item">
-              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="weight-loss" checked>
-              <span class="weight-program__control-mark"></span>
-              <label for="weight-loss">похудение</label>
-            </li>
-            <li class="weight-program__item">
-              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="weight-gain">
-              <span class="weight-program__control-mark"></span>
-              <label for="weight-gain">Набор массы</label>
-            </li>
-            <li class="weight-program__item">
-              <input class="weight-program__control visually-hidden" type="radio" name="weight-program" id="unknown">
-              <span class="weight-program__control-mark"></span>
-              <label for="unknown">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-      <fieldset class="master-contacts inner-content-center">
-        <legend class="master-contacts__title">Контактные данные (владельца кота)</legend>
-        <ul class="master-contacts__list">
-          <li class="master-contacts__item master-contacts__item-email">
-            <label for="email">E-mail:*</label>
-            <input class="master-contacts__userfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-            <svg class="master-contacts__email-image" width="19" height="14" fill-opacity="0" xmlns="http://www.w3.org/2000/svg"><path stroke-width="1.3" d="M.65 6v8M17.65 6v8M0 13.35h18M0 1.35h18M17.35 3.182 9 9.677.65 3.182V1.65h16.7v1.532Z"/></svg>
-          </li>
-          <li class="master-contacts__item master-contacts__item-phone">
-            <label for="phone">Телефон:*</label>
-            <input class="master-contacts__userfield" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="8 (960) 900-60-90">
-            <svg class="master-contacts__phone-image" width="20" height="21" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs><clipPath id="b"><path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></clipPath></defs></svg>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="comments inner-content-center">
-        <legend class="comments__title">Комментарий</legend>
-        <label for="content"></label>
-        <textarea rows="5" cols="10" id="content" name="content"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
-      <fieldset class="addition inner-content-center">
-        <legend class="addition__title">Дополнительно</legend>
-        <ul class="addition__list">
-          <li class="addition__item">
-            <input class="addition__control visually-hidden" type="checkbox" name="shugar" id="shugar" checked>
-            <span class="addition__control-mark"></span>
-            <label for="shugar">сахарозаменитель</label>
-          </li>
-          <li class="addition__item">
-            <input class="addition__control visually-hidden" type="checkbox" name="water" id="water">
-            <span class="addition__control-mark"></span>
-            <label for="water">питьевая вода</label>
-          </li>
-          <li class="addition__item">
-            <input class="addition__control visually-hidden" type="checkbox" name="milk" id="milk">
-            <span class="addition__control-mark"></span>
-            <label for="milk">молоко</label>
-          </li>
-          <li class="addition__item">
-            <input class="addition__control visually-hidden" type="checkbox" name="vitamin" id="vitamin">
-            <span class="addition__control-mark"></span>
-            <label for="vitamin">витамины</label>
-          </li>
-        </ul>
-      </fieldset>
-      <div class="form__button-wrapper">
-        <button class="button form__button" type="submit">Отправить заявку</button>
-        <p class="form__description">* — Обязательные поля</p>
-      </div>
-    </form>
-    <div class="contacts">
-      <div class="contacts__wrapper inner-content-center">
-        <p class="contacts__invitation">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="contacts__address">
-          <p class="contacts__adress-street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__adress-town">Санкт-Петербург</p>
-        </address>
-      </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650353858203!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </main>
-
-  <footer class="main-footer">
-    <div class="main-footer__container content-center">
-      <a class="main-footer__footer-logo" href="#">
-        <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#b)" fill="#111"><path d="M1.603 22.051A9.498 9.498 0 0 1 0 16.308V7.795a9.63 9.63 0 0 1 1.502-5.846C2.604.615 4.307 0 6.811 0s4.106.615 5.108 1.744a7.487 7.487 0 0 1 1.502 5.025v2.052H8.513V6.46a5.157 5.157 0 0 0-.3-2.05 1.463 1.463 0 0 0-.579-.63 1.415 1.415 0 0 0-.823-.191c-.701 0-1.202.205-1.403.718a6.774 6.774 0 0 0-.3 2.256v10.974a4.334 4.334 0 0 0 .4 2.154c.2.513.702.718 1.403.718.7 0 1.102-.205 1.302-.718.228-.693.33-1.423.3-2.154v-2.461h4.908v2.051a7.98 7.98 0 0 1-1.502 5.128c-1.002 1.231-2.705 1.847-5.108 1.847-2.404-.103-4.207-.718-5.208-2.052ZM19.33.308h5.71l4.206 23.384h-4.607l-.802-4.923h-3.305l-.801 4.923h-4.708L19.33.308Zm4.107 15.384-1.202-9.128-1.202 9.128h2.404ZM32.751 4.205h-3.405V.308h11.918v3.794H37.86v19.59h-5.108V4.205ZM50.379.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.914V.308h.1ZM61.797.308H64l6.51 15.487V.308h2.604v23.384h-2.003l-6.61-16v16h-2.704V.308ZM76.119.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.814V.308ZM87.537.308h4.607a7.873 7.873 0 0 1 5.108 1.436c1.102.923 1.602 2.564 1.602 4.717 0 2.975-.901 4.821-2.804 5.436l3.205 11.693H96.15l-3.005-10.975h-2.503V23.59h-3.205V.308h.1Zm4.407 10.05a4.302 4.302 0 0 0 2.904-.82c.601-.512.902-1.538.902-3.077a6.772 6.772 0 0 0-.3-2.256 2.583 2.583 0 0 0-1.103-1.23 4.473 4.473 0 0 0-2.203-.411h-1.402v7.692h1.202v.103ZM102.861 21.949a10.566 10.566 0 0 1-1.402-5.95V8.206c-.025-1.486.143-2.97.5-4.41a5.204 5.204 0 0 1 1.903-2.667 6.421 6.421 0 0 1 3.706-.923c2.103 0 3.606.513 4.507 1.641a7.982 7.982 0 0 1 1.402 5.128v.82h-3.004v-.717a15.503 15.503 0 0 0-.201-2.564 2.056 2.056 0 0 0-.801-1.334 3.04 3.04 0 0 0-1.903-.512 2.955 2.955 0 0 0-2.003.615 2.349 2.349 0 0 0-.801 1.641 19.734 19.734 0 0 0-.201 2.77v8.717a9.527 9.527 0 0 0 .601 3.898c.401.82 1.202 1.128 2.404 1.128.475.06.956-.024 1.384-.243a2.45 2.45 0 0 0 1.02-.988 9.635 9.635 0 0 0 .701-4.102V14.46h-2.905v-2.359h5.809v11.59h-2.003l-.3-2.666a4.18 4.18 0 0 1-1.554 2.21 4.016 4.016 0 0 1-2.553.764 4.907 4.907 0 0 1-2.406-.47 5.037 5.037 0 0 1-1.9-1.581ZM119.987 15.487 115.08.41h3.004l3.506 11.282L124.995.41H128l-4.908 15.077v8.205h-3.004v-8.205h-.101Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h128v24H0z"/></clipPath></defs></svg>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  </head>
+  <body class="page__form">
+    <header class="main-header main-header-form content-center">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-page/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-page/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/main-page/logo-mobile-group.svg" width="191" height="38" alt="логотип cat energy.">
+        </picture>
       </a>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <svg width="28" height="22">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
-              </svg>
-              <span class="visually-hidden">В контакте.</span>
-            </a>
+      <nav class="main-navigation main-navigation--closed">
+        <!-- .main-navigation--opened .main-navigaton--closed .main-navigation--nojs -->
+        <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">открыть меню.</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__form-link" href="index.html">главная</a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="28" height="22">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
-              </svg>
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__form-link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy">
-              <svg width="28" height="22">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
-              </svg>
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
+          <li class="main-navigation__item main-navigation__item--current main-navigation__item-form--current">
+            <a class="main-navigation__link main-navigation__form-link" href="#">подбор программы</a>
           </li>
         </ul>
+      </nav>
+    </header>
+    <main class="form-container">
+      <div class="form-container__title-wrapper inner-content-center">
+        <h1 class="form-container__title">Подбор программы</h1>
+        <p class="form-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__description">HTML Academy</span>
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-academy"></use>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__wrapper inner-content-center">
+          <fieldset class="data">
+            <legend class="data__title visually-hidden">Входящие данные</legend>
+            <ul class="data__list">
+              <li class="data__item">
+                <label for="name">имя:*</label>
+                <input class="data__userfield" type="text" id="name" name="name" placeholder="барсик">
+              </li>
+              <li class="data__item">
+                <label for="weight">Вес (кг):*</label>
+                <input class="data__userfield" type="number" id="weight" name="weight" placeholder="7">
+              </li>
+              <li class="data__item">
+                <label for="age">Возраст (лет):</label>
+                <input class="data__userfield" type="number" id="age" name="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="weight-program">
+            <legend class="weight-program__title visually-hidden">Программа контроля веса</legend>
+            <ul class="weight-program__list">
+              <li class="weight-program__item">
+                <input class="weight-program__control visually-hidden" type="radio" name="weight-program" value="weight-loss" id="weight-loss" checked>
+                <span class="weight-program__control-mark"></span>
+                <label for="weight-loss">похудение</label>
+              </li>
+              <li class="weight-program__item">
+                <input class="weight-program__control visually-hidden" type="radio" name="weight-program" value="weight-gain" id="weight-gain">
+                <span class="weight-program__control-mark"></span>
+                <label for="weight-gain">Набор массы</label>
+              </li>
+              <li class="weight-program__item">
+                <input class="weight-program__control visually-hidden" type="radio" name="weight-program" value="need an advice" id="unknown">
+                <span class="weight-program__control-mark"></span>
+                <label for="unknown">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="master-contacts">
+          <legend class="visually-hidden">Контактные данные</legend>
+          <div class="master-contacts__title-wrapper">
+            <h2 class="master-contacts__title">Контактные данные (владельца кота)</h2>
+          </div>
+          <ul class="master-contacts__list">
+            <li class="master-contacts__item master-contacts__item-email">
+              <label for="email">E-mail:*</label>
+              <input class="master-contacts__userfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <svg class="master-contacts__email-image" width="19" height="14" fill-opacity="0" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-width="1.3" d="M.65 6v8M17.65 6v8M0 13.35h18M0 1.35h18M17.35 3.182 9 9.677.65 3.182V1.65h16.7v1.532Z"/>
+              </svg>
+            </li>
+            <li class="master-contacts__item master-contacts__item-phone">
+              <label for="phone">Телефон:*</label>
+              <input class="master-contacts__userfield" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="8 (960) 900-60-90">
+              <svg class="master-contacts__phone-image" width="20" height="21" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="comments">
+          <legend class="visually-hidden">Комментарий</legend>
+          <div class="comments__title-wrapper">
+            <h2 class="comments__title">Комментарий</h2>
+          </div>
+          <div class="comments__content-wrapper inner-content-center">
+            <label for="content"></label>
+            <textarea class="comments__field" rows="5" cols="10" id="content" name="content"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="addition">
+          <legend class="visually-hidden">Дополнительные товары</legend>
+          <div class="addition__title-wrapper">
+            <h2 class="addition__title">Дополнительно</h2>
+          </div>
+          <ul class="addition__list">
+            <li class="addition__item">
+              <input class="addition__control visually-hidden" type="checkbox" name="shugar" id="shugar" checked>
+              <span class="addition__control-mark"></span>
+              <label for="shugar">сахарозаменитель</label>
+            </li>
+            <li class="addition__item">
+              <input class="addition__control visually-hidden" type="checkbox" name="water" id="water">
+              <span class="addition__control-mark"></span>
+              <label for="water">питьевая вода</label>
+            </li>
+            <li class="addition__item">
+              <input class="addition__control visually-hidden" type="checkbox" name="milk" id="milk">
+              <span class="addition__control-mark"></span>
+              <label for="milk">молоко</label>
+            </li>
+            <li class="addition__item">
+              <input class="addition__control visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+              <span class="addition__control-mark"></span>
+              <label for="vitamin">витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__button-wrapper">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <p class="form__description">* — Обязательные поля</p>
+        </div>
+      </form>
+      <div class="contacts contacts-form">
+        <div class="contacts__wrapper inner-content-center">
+          <p class="contacts__invitation">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <p class="contacts__adress-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__adress-town">Санкт-Петербург</p>
+          </address>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/main-page/map-desktop.webp 1x, img/main-page/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-page/map-tablet.webp 1x, img/main-page/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-page/map-mobile.webp 1x, img/main-page/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/main-page/map-desktop.jpg 1x, img/main-page/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-page/map-tablet.jpg 1x, img/main-page/map-tablet@2x.jpg 2x">
+          <img class="contacts__image-map" src="img/main-page/map-mobile.jpg" srcset="img/main-page/map-mobile@2x.jpg 2x" width="320" height="362" alt="карта.">
+        </picture>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650353858203!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container content-center">
+        <a class="main-footer__footer-logo" href="#">
+          <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#b)" fill="#111">
+              <path d="M1.603 22.051A9.498 9.498 0 0 1 0 16.308V7.795a9.63 9.63 0 0 1 1.502-5.846C2.604.615 4.307 0 6.811 0s4.106.615 5.108 1.744a7.487 7.487 0 0 1 1.502 5.025v2.052H8.513V6.46a5.157 5.157 0 0 0-.3-2.05 1.463 1.463 0 0 0-.579-.63 1.415 1.415 0 0 0-.823-.191c-.701 0-1.202.205-1.403.718a6.774 6.774 0 0 0-.3 2.256v10.974a4.334 4.334 0 0 0 .4 2.154c.2.513.702.718 1.403.718.7 0 1.102-.205 1.302-.718.228-.693.33-1.423.3-2.154v-2.461h4.908v2.051a7.98 7.98 0 0 1-1.502 5.128c-1.002 1.231-2.705 1.847-5.108 1.847-2.404-.103-4.207-.718-5.208-2.052ZM19.33.308h5.71l4.206 23.384h-4.607l-.802-4.923h-3.305l-.801 4.923h-4.708L19.33.308Zm4.107 15.384-1.202-9.128-1.202 9.128h2.404ZM32.751 4.205h-3.405V.308h11.918v3.794H37.86v19.59h-5.108V4.205ZM50.379.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.914V.308h.1ZM61.797.308H64l6.51 15.487V.308h2.604v23.384h-2.003l-6.61-16v16h-2.704V.308ZM76.119.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.814V.308ZM87.537.308h4.607a7.873 7.873 0 0 1 5.108 1.436c1.102.923 1.602 2.564 1.602 4.717 0 2.975-.901 4.821-2.804 5.436l3.205 11.693H96.15l-3.005-10.975h-2.503V23.59h-3.205V.308h.1Zm4.407 10.05a4.302 4.302 0 0 0 2.904-.82c.601-.512.902-1.538.902-3.077a6.772 6.772 0 0 0-.3-2.256 2.583 2.583 0 0 0-1.103-1.23 4.473 4.473 0 0 0-2.203-.411h-1.402v7.692h1.202v.103ZM102.861 21.949a10.566 10.566 0 0 1-1.402-5.95V8.206c-.025-1.486.143-2.97.5-4.41a5.204 5.204 0 0 1 1.903-2.667 6.421 6.421 0 0 1 3.706-.923c2.103 0 3.606.513 4.507 1.641a7.982 7.982 0 0 1 1.402 5.128v.82h-3.004v-.717a15.503 15.503 0 0 0-.201-2.564 2.056 2.056 0 0 0-.801-1.334 3.04 3.04 0 0 0-1.903-.512 2.955 2.955 0 0 0-2.003.615 2.349 2.349 0 0 0-.801 1.641 19.734 19.734 0 0 0-.201 2.77v8.717a9.527 9.527 0 0 0 .601 3.898c.401.82 1.202 1.128 2.404 1.128.475.06.956-.024 1.384-.243a2.45 2.45 0 0 0 1.02-.988 9.635 9.635 0 0 0 .701-4.102V14.46h-2.905v-2.359h5.809v11.59h-2.003l-.3-2.666a4.18 4.18 0 0 1-1.554 2.21 4.016 4.016 0 0 1-2.553.764 4.907 4.907 0 0 1-2.406-.47 5.037 5.037 0 0 1-1.9-1.581ZM119.987 15.487 115.08.41h3.004l3.506 11.282L124.995.41H128l-4.908 15.077v8.205h-3.004v-8.205h-.101Z"/>
+            </g>
+            <defs>
+              <clipPath id="b">
+                <path fill="#fff" d="M0 0h128v24H0z"/>
+              </clipPath>
+            </defs>
           </svg>
         </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">В контакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+                <span class="visually-hidden">Телеграм.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__description">HTML Academy</span>
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-
-</body>
-
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>

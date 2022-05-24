@@ -1,18 +1,58 @@
 .addition {
+  position: relative;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   padding: 0;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    transform: translateY(1px);
+    left: 58%;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 22px;
+      left: 0;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 21px;
   }
 }
 
+.addition__title-wrapper {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .addition__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    width: 630px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,11 +60,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 33px;
+    width: 1220px;
   }
 }
 
 .addition__title {
   position: relative;
+  margin: 0;
   margin-bottom: 39px;
   padding: 0;
   padding-right: 23px;
@@ -35,40 +77,17 @@
   color: $black;
   text-transform: none;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    transform: translateY(1px);
-    left: 100%;
-    width: 400vh;
-    height: 2px;
-    background-color: #68b738;
-  }
-
   @media (min-width: $tablet-width) {
     width: 211px;
     font-size: 36px;
     line-height: 36px;
     background-color: $white;
     padding: 0 38px;
-    margin-bottom: 76px;
+    margin-bottom: 63px;
     margin-left: -38px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      transform: translateY(4px);
-      left: -100%;
-      width: 500vw;
-      height: 2px;
-      background-color: #68b738;
-      z-index: -1;
-    }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 62px;
   }
 }
@@ -164,5 +183,15 @@
 }
 
 .addition__control:disabled + .addition__control-mark {
+  opacity: 0.3;
+}
+
+.addition__control:focus + .addition__control-mark {
+  &::before {
+    outline: 1px solid #222222;
+  }
+}
+
+.addition__control:disabled ~ label {
   opacity: 0.3;
 }
