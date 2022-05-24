@@ -1,3 +1,12 @@
+.form {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  text-transform: uppercase;
+}
+
 .form__button {
   font-size: 16px;
   line-height: 20px;
@@ -44,12 +53,16 @@
 }
 
 .form__button-wrapper {
+  margin: 0 auto;
+  max-width: 280px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     margin-bottom: 72px;
     align-items: center;
+    max-width: 630px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,5 +70,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 82px;
+    max-width: 1220px;
   }
 }

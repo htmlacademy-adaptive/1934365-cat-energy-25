@@ -69,8 +69,8 @@
   }
 }
 
-.page__catalog .contacts,
-.page__form .contacts {
+.contacts-catalog,
+.contacts-form {
   padding-top: 27px;
   background-color: #f2f2f2;
 
@@ -88,6 +88,20 @@
 
   @media (min-width: $desktop-width) {
     min-height: 400px;
+  }
+}
+
+.contacts__image-map {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
   }
 }
 

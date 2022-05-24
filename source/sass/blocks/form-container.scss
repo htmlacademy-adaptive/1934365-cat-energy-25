@@ -1,14 +1,7 @@
-.form {
-  font-family: $title-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: rgba(68, 68, 68, 1);
-  text-transform: uppercase;
-}
-
-fieldset {
-  border: none;
+.form-container {
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+  }
 }
 
 .form-container__title {
@@ -48,13 +41,4 @@ fieldset {
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.data__list,
-.weight-program__list,
-.master-contacts__list,
-.addition__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }

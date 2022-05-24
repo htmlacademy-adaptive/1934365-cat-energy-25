@@ -1,5 +1,40 @@
-.additional-goods__title {
+.additional-goods {
   position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 0;
+      top: 21px;
+    }
+  }
+}
+
+.additional-goods__title-wrapper {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.additional-goods__title {
   display: inline-block;
   margin: 0;
   padding-right: 22px;
@@ -11,33 +46,11 @@
   color: $black;
   background-color: $white;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 100%;
-    width: 100vh;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 36px;
     margin-bottom: 79px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 60%;
-      left: -80%;
-      width: 500%;
-      height: 2px;
-      background-color: #68b738;
-      z-index: -1;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -180,15 +193,20 @@
 }
 
 .additional-goods__button {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    width: auto;
-    margin-top: 21px;
+    width: 632px;
+    justify-self: center;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
-    align-self: center;
+    margin-top: -10px;
+    justify-self: initial;
+    width: auto;
   }
 }
 
@@ -212,6 +230,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-background-catalog@2x.jpg");
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {

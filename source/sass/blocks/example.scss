@@ -1,6 +1,6 @@
 .example {
   padding-top: 25px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -31,8 +31,9 @@
 .example__inner-container {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 545px 1fr;
-    column-gap: 86px;
+    grid-template-columns: 521px 1fr;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -61,30 +62,29 @@
     width: 1220px;
     margin: auto;
     margin-bottom: 76px;
+    padding-right: 300px;
+    box-sizing: border-box;
   }
 }
 
 .example__description {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   margin-top: 14px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 0;
   width: 280px;
   color: #444444;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
-    margin-left: auto;
-    width: 737px;
+    width: 708px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    // grid-column: 1 / 2;
-    // grid-row: 1 / 2;
     width: 436px;
+    margin: 0;
     margin-top: 71px;
     margin-bottom: 68px;
   }
@@ -99,7 +99,6 @@
   @media (min-width: $desktop-width) {
     width: auto;
     margin: 0;
-    margin-left: 110px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -115,11 +114,6 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
-
-  @media (min-width: $desktop-width) {
-    // grid-column: 1 / 2;
-    // grid-row: 2 / 3;
-  }
 }
 
 .example__item {
@@ -131,7 +125,7 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     width: 162px;
-    margin-right: 38px;
+    margin-right: 42px;
   }
 }
 
@@ -207,7 +201,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    // width: 100%;
     margin-top: 31px;
     margin-bottom: 10px;
   }
@@ -246,8 +239,9 @@
 }
 
 .example__image-wrapper {
+  margin: 0 auto;
+  width: 280px;
   padding-bottom: 15px;
-  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -255,6 +249,7 @@
     justify-content: center;
     margin: 0;
     margin-top: 65px;
+    width: 100%;
     background-image: linear-gradient(to bottom, $white 0%, $white 32%, #eaeaea 32%, #eaeaea 100%);
   }
 
@@ -273,12 +268,12 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 45px;
-  margin-left: 20px;
+  margin: 0 auto;
   width: 280px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     width: 100%;
     padding-top: 10px;
@@ -312,13 +307,6 @@
   }
 }
 
-// .example__fat-wrapper {
-//   @media (min-width: $tablet-width) {
-//     width: 122px;
-//     overflow: hidden;
-//   }
-// }
-
 .example__fat-image {
   @media (min-width: $tablet-width) {
     width: 296px;
@@ -330,13 +318,6 @@
   }
 }
 
-// .example__slim-wrapper {
-//   @media (min-width: $tablet-width) {
-//     width: 122px;
-//     overflow: hidden;
-//   }
-// }
-
 .example__progress-before,
 .example__progress-after {
   position: relative;
@@ -346,6 +327,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -358,7 +341,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-left: 89px;
+    margin-right: 24px;
 
     &::after {
       position: absolute;
@@ -376,12 +359,30 @@
   }
 }
 
+.example__progress-before:hover,
+.example__progress-after:hover {
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-image: url("../img/main-page/underline-solid.svg");
+    }
+  }
+}
+
+.example__progress-before:active,
+.example__progress-after:active {
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .example__progress-after {
   padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: 85px;
+    margin-left: 24px;
 
     &::after {
       position: absolute;
