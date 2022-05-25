@@ -209,8 +209,8 @@
   }
 }
 
-.main-navigation__item-catalog--current,
-.main-navigation__item-form--current {
+.main-navigation__item--catalog-current,
+.main-navigation__item--form-current {
   @media (min-width: $desktop-width) {
     &::after {
       background-color: #68b738;

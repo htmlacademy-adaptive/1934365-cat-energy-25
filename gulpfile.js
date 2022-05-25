@@ -7,7 +7,6 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -34,14 +33,6 @@ const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
-}
-
-// Scripts
-
-const scripts = () => {
-  return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -131,7 +122,6 @@ export const build = gulp.series(
   gulp.parallel (
     styles,
     html,
-    scripts,
     svg,
     sprite,
     createWebp
@@ -147,7 +137,6 @@ export default gulp.series(
   gulp.parallel (
     styles,
     html,
-    scripts,
     svg,
     sprite,
     createWebp
